@@ -55,6 +55,22 @@
             text-decoration: underline;
         }
     }
+    .title_max{
+        font-size: 7rem;
+        .text{
+            font-weight: 100px;
+            font-size: 28px;
+            color: #FAFAFA;
+        }
+        .dud{
+            color: #757575;
+        }
+    }
+    .mini_title{
+        font-size: 2rem;
+        color: gray;
+        margin:5px 200px 0px 200px;
+    }
 }
 
 .title,

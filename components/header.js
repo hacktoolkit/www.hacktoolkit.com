@@ -29,8 +29,8 @@ export function Header({ children }) {
             <div>
                 <Image 
                     src="/logo.png"
-                    width={70}
-                    height = {70}
+                    width={260}
+                    height = {60}
                     alt="logo"
                 />
             </div>
