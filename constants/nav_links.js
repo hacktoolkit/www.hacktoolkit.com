@@ -24,5 +24,4 @@ const NAV_LINKS = [
         url: '/contact',
     },
 ];
-
 export default NAV_LINKS;

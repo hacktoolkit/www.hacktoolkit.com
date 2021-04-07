@@ -16,12 +16,15 @@ export function Header({ children }) {
             [css.active]: link.url === router.pathname,
         });
         const target = link.url.substring(0, 4) === 'http' ? '_blank' : null;
-        return (
-            <Nav.Item key={`link-${index}`}>
-                <Nav.Link href={link.url} className={classes} target={target}>
-                    {link.name}
-                </Nav.Link>
-            </Nav.Item>
+        return (    
+            <Link href= {link.name.toLowerCase() =="home" ? "/" : `/${link.name.toLowerCase()}`} >
+                <a className={classes}> {link.name}</a>
+            </Link>
+            // <Nav.Item key={`link-${index}`}>
+            //     <Nav.Link href={link.url} className={classes} target={target}>
+            //         {link.name}
+            //     </Nav.Link>
+            // </Nav.Item>
         );
     });
     return (
@@ -35,7 +38,8 @@ export function Header({ children }) {
                 />
             </div>
             <div className={css.header}>            
-                <Nav>{navItemsJSX}</Nav>
+                {navItemsJSX}
+                {/* <Nav>{navItemsJSX}</Nav> */}
             </div>
         </div>
     );
