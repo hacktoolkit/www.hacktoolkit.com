@@ -14,19 +14,21 @@ export default function Home() {
     return (
         <Page>
             <div className={homecss.white_section}>
-                <div className={css.title}>
-                    <div className={css.title_max}>
-                        Open-source <Welcome /> <span className="text"></span>
-                    </div>
-                    <div className={css.mini_title}>
-                    Win hackathons by using refined APIs and bootstrap code to build complete websites and apps in 24 hours. 
+                <div className={css.whitebackgroundimage}>
+                        <div className={css.title}>
+                        <div className={css.title_max}>
+                                Open-source <Welcome /> <span className="text"></span>
+                        </div>
+                        <div className={css.mini_title}>
+                        Win hackathons by using refined APIs and bootstrap code to build complete websites and apps in 24 hours. 
+                        </div>
                     </div>
                 </div>
             </div>
             <div className={homecss.black_section}>
                 <div className={css.topspace}>
                     <h2 className={css.sectiontitle}>What is Hacktoolkit?</h2>
-                    <h4 className={css.sectionbody}>Hacktoolkit is a collection of bootstrap code that you can use to start your next project, whether it’s a website or mobile app, Letting you to:
+                    <h4 className={css.sectionbody}>Hacktoolkit is a collection of bootstrap code that you can use to start your next project, whether it’s a website or mobile app, by letting you to:
                     </h4>
                     <div className={css.homesection2body}>
                         <div className={css.homesection2card}>
@@ -56,7 +58,6 @@ export default function Home() {
             <div className={homecss.blue_section}>
                 <h2>Fourth Section</h2>
             </div>
-
         </Page>
     );
 }
