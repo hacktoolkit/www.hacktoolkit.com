@@ -22,6 +22,12 @@ export default function Home() {
             <div className={homecss.black_section}>
                 <h2>Second Section</h2>
             </div>
+            <div className={homecss.white_section}>
+                <h2>Third Section</h2>
+            </div>
+            <div className={homecss.blue_section}>
+                <h2>Fourth Section</h2>
+            </div>
 
         </Page>
     );
