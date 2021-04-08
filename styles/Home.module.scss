@@ -61,3 +61,22 @@
         flex-direction: column;
     }
 }
+
+.black_section{
+    height: 700px;
+    background: #172026 !important;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white_section{
+    height: 700px;
+    width: 100% !important;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
