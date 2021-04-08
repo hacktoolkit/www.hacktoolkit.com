@@ -155,3 +155,39 @@
     width: 80%;
     margin: auto;
 }
+.topspace{
+    padding-top: 100px;
+}
+.sectiontitle{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sectionbody{
+    padding-left: 400px;
+    padding-right: 400px;
+    font-size: 1rem;
+    text-align: center;
+    color: #e6e5e5;
+}
+.blackSectionIcons{
+    font-size: 4.5rem !important;
+    color: white;
+}
+.homesection2body{
+    padding-top: 80px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.homesection2card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:400px;
+}
+.centerText{
+    text-align: center !important;
+}
