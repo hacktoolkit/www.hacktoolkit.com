@@ -56,6 +56,7 @@
         }
     }
     .title_max {
+        padding-top: 200px;
         font-size: 7rem;
         .text {
             font-weight: 100px;
@@ -192,7 +193,7 @@
     text-align: center !important;
 }
 .whitebackgroundimage {
-    background-image: url('../public/whitebackgroundimage.jpg');
+    background-image: url('../public/background.jpg');
     background-size: cover;
-    height: 500px;
+    height: 100%;
 }

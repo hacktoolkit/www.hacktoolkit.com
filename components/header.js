@@ -29,13 +29,14 @@ export function Header({ children }) {
     });
     return (
         <div className = {css.headertop}>
-            <div>
+            <div className={css.headerleft}>
                 <Image 
                     src="/logo.png"
-                    width={260}
-                    height = {60}
+                    width={70}
+                    height = {70}
                     alt="logo"
                 />
+                <h1 className={css.logotitle}>hacktoolkit</h1>
             </div>
             <div className={css.header}>            
                 {navItemsJSX}
