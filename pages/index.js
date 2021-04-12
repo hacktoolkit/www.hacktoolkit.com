@@ -5,10 +5,12 @@ import Icon from '@material-ui/core/Icon';
 import Page from '../components/base_page';
 import Welcome from '../components/js/text_effect';
 import css from '../styles/common.module.scss';
+import teamcss from '../styles/teams.module.scss';
 import homecss from '../styles/Home.module.scss';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Image from 'next/image';
 
 export default function Home() {
     return (
@@ -52,8 +54,188 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            {/* Team Section */}
             <div className={homecss.white_section}>
-                <h2>Third Section</h2>
+                <div className={css.teambackgroundimage}>
+                    <div className={css.topspace}>
+                    <h2 className={css.sectiontitle}>Teams</h2>
+                    <h4 className={css.sectionbodywhite}>Our valuable contributors from all over the world
+                    </h4>
+                    <div className={teamcss.evenImageLists}>
+                        <div className={teamcss.avator}>
+                            <Image 
+                                className={teamcss.avatorImg}
+                                src="/teams/jontsai.png"
+                                width={70}
+                                height = {70}
+                                alt="jontsai"
+                            />
+                        </div>
+                        <div className={teamcss.avator}>
+                            <Image 
+                                className={teamcss.avatorImg}
+                                src="/teams/jos.jpg"
+                                width={70}
+                                height = {70}
+                                alt="jontsai"
+                            />
+                        </div>
+                        <div className={teamcss.avator}>
+                            <Image 
+                                className={teamcss.avatorImg}
+                                src="/teams/team1.png"
+                                width={70}
+                                height = {70}
+                                alt="jontsai"
+                            />
+                        </div>
+                        <div className={teamcss.avator}>
+                            <Image 
+                                className={teamcss.avatorImg}
+                                src="/teams/team2.png"
+                                width={70}
+                                height = {70}
+                                alt="jontsai"
+                            />
+                        </div>
+                        <div className={teamcss.avator}>
+                            <Image 
+                                className={teamcss.avatorImg}
+                                src="/teams/team3.jpg"
+                                width={70}
+                                height = {70}
+                                alt="jontsai"
+                            />
+                        </div>
+                    </div>
+                    <div className={teamcss.oddImageLists}>
+                        
+                        <div className={teamcss.avator}>
+                            <Image 
+                                className={teamcss.avatorImg}
+                                src="/teams/team4.jpg"
+                                width={70}
+                                height = {70}
+                                alt="jontsai"
+                            />
+                        </div>
+                        <div className={teamcss.avator}>
+                            <Image 
+                                className={teamcss.avatorImg}
+                                src="/teams/team5.jpg"
+                                width={70}
+                                height = {70}
+                                alt="jontsai"
+                            />
+                        </div>
+                        <div className={teamcss.avator}>
+                            <Image 
+                                className={teamcss.avatorImg}
+                                src="/teams/team6.png"
+                                width={70}
+                                height = {70}
+                                alt="jontsai"
+                            />
+                        </div>
+                        <div className={teamcss.avator}>
+                            <Image 
+                                className={teamcss.avatorImg}
+                                src="/teams/team7.png"
+                                width={70}
+                                height = {70}
+                                alt="jontsai"
+                            />
+                        </div>
+                    </div>
+                    <div className={teamcss.evenImageLists}>
+                        <div className={teamcss.avator}>
+                            <Image 
+                                className={teamcss.avatorImg}
+                                src="/teams/jontsai.png"
+                                width={70}
+                                height = {70}
+                                alt="jontsai"
+                            />
+                        </div>
+                        <div className={teamcss.avator}>
+                            <Image 
+                                className={teamcss.avatorImg}
+                                src="/teams/jontsai.png"
+                                width={70}
+                                height = {70}
+                                alt="jontsai"
+                            />
+                        </div>
+                        <div className={teamcss.avator}>
+                            <Image 
+                                className={teamcss.avatorImg}
+                                src="/teams/jontsai.png"
+                                width={70}
+                                height = {70}
+                                alt="jontsai"
+                            />
+                        </div>
+                        <div className={teamcss.avator}>
+                            <Image 
+                                className={teamcss.avatorImg}
+                                src="/teams/jontsai.png"
+                                width={70}
+                                height = {70}
+                                alt="jontsai"
+                            />
+                        </div>
+                        <div className={teamcss.avator}>
+                            <Image 
+                                className={teamcss.avatorImg}
+                                src="/teams/jontsai.png"
+                                width={70}
+                                height = {70}
+                                alt="jontsai"
+                            />
+                        </div>
+                    </div>
+                    <div className={teamcss.oddImageLists}>
+                        
+                        <div className={teamcss.avator}>
+                            <Image 
+                                className={teamcss.avatorImg}
+                                src="/teams/jontsai.png"
+                                width={70}
+                                height = {70}
+                                alt="jontsai"
+                            />
+                        </div>
+                        <div className={teamcss.avator}>
+                            <Image 
+                                className={teamcss.avatorImg}
+                                src="/teams/jontsai.png"
+                                width={70}
+                                height = {70}
+                                alt="jontsai"
+                            />
+                        </div>
+                        <div className={teamcss.avator}>
+                            <Image 
+                                className={teamcss.avatorImg}
+                                src="/teams/jontsai.png"
+                                width={70}
+                                height = {70}
+                                alt="jontsai"
+                            />
+                        </div>
+                        <div className={teamcss.avator}>
+                            <Image 
+                                className={teamcss.avatorImg}
+                                src="/teams/jontsai.png"
+                                width={70}
+                                height = {70}
+                                alt="jontsai"
+                            />
+                        </div>
+                    </div>
+                
+                </div>
+                </div>
             </div>
             <div className={homecss.blue_section}>
                 <h2>Fourth Section</h2>

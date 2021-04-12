@@ -1,0 +1,22 @@
+.avator {
+    border: 1px solid blue !important;
+    border-radius: 100px !important;
+}
+.avatorImg {
+    border-radius: 100px !important;
+}
+.evenImageLists {
+    margin-bottom: 20px;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start;
+    line-height: 0.5 !important;
+}
+.oddImageLists {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start;
+    margin-left: 150px;
+    margin-right: 150px;
+    line-height: 0.5 !important;
+}

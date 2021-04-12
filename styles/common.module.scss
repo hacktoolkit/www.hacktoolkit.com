@@ -172,6 +172,16 @@
     text-align: center;
     color: #e6e5e5;
 }
+
+.sectionbodywhite {
+    padding-left: 400px;
+    padding-right: 400px;
+    font-size: 1rem;
+    text-align: center;
+    color: #949494;
+    margin-bottom: 60px;
+}
+
 .blackSectionIcons {
     font-size: 4.5rem !important;
     color: white;
@@ -194,6 +204,15 @@
 }
 .whitebackgroundimage {
     background-image: url('../public/background.jpg');
+    background-size: cover;
+    height: 100%;
+}
+.teambackgroundimage {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 0, 0, 0),
+        rgba(255, 0, 0, 1)
+    );
     background-size: cover;
     height: 100%;
 }
