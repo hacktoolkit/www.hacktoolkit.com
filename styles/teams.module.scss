@@ -1,16 +1,50 @@
 .avator {
-    border: 1px solid blue !important;
+    border: 5px solid gray !important;
+    background: #16bffd; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #cb3066,
+        #16bffd
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #cb3066,
+        #16bffd
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     border-radius: 100px !important;
 }
+.avatorDetail {
+    display: block;
+    position: static;
+}
+
 .avatorImg {
     border-radius: 100px !important;
 }
+
+.avator:hover {
+    border: 5px solid rgb(255, 174, 0) !important;
+    position: sticky i !important;
+    transition: all 500ms ease;
+    transform: scale(1.1);
+    .avatorDetail {
+        display: block !important;
+    }
+}
+
 .evenImageLists {
     margin-bottom: 20px;
     display: flex !important;
     justify-content: space-between !important;
     align-items: flex-start;
     line-height: 0.5 !important;
+}
+.fullAvator {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
 .oddImageLists {
     display: flex !important;

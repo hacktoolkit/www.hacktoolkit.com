@@ -55,13 +55,17 @@ export default function Home() {
                 </div>
             </div>
             {/* Team Section */}
-            <div className={homecss.white_section}>
+            <div className={homecss.team_section}>
                 <div className={css.teambackgroundimage}>
                     <div className={css.topspace}>
                     <h2 className={css.sectiontitle}>Teams</h2>
                     <h4 className={css.sectionbodywhite}>Our valuable contributors from all over the world
                     </h4>
                     <div className={teamcss.evenImageLists}>
+                        <div className={teamcss.fullAvator}>
+                        <div className={teamcss.avatorDetail}>
+                            <h1></h1>
+                        </div>
                         <div className={teamcss.avator}>
                             <Image 
                                 className={teamcss.avatorImg}
@@ -70,6 +74,7 @@ export default function Home() {
                                 height = {70}
                                 alt="jontsai"
                             />
+                        </div>
                         </div>
                         <div className={teamcss.avator}>
                             <Image 
@@ -237,9 +242,9 @@ export default function Home() {
                 </div>
                 </div>
             </div>
-            <div className={homecss.blue_section}>
+            {/* <div className={homecss.blue_section}>
                 <h2>Fourth Section</h2>
-            </div>
+            </div> */}
         </Page>
     );
 }
