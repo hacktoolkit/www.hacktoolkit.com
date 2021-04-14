@@ -1,6 +1,8 @@
 import { AccessAlarm} from '@material-ui/icons';
 import ComputerIcon from '@material-ui/icons/Computer';
 import CenterFocusWeakIcon from '@material-ui/icons/CenterFocusWeak';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import Icon from '@material-ui/core/Icon';
 import Page from '../components/base_page';
 import Welcome from '../components/js/text_effect';
@@ -11,6 +13,7 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'next/image';
+import ReactCountryFlag from "react-country-flag"
 
 export default function Home() {
     return (
@@ -62,21 +65,40 @@ export default function Home() {
                     <h4 className={css.sectionbodywhite}>Our valuable contributors from all over the world
                     </h4>
                     <div className={teamcss.evenImageLists}>
-                        <div className={teamcss.fullAvator}>
+                        <div className={teamcss.avator}>
                         <div className={teamcss.avatorDetail}>
-                            <h1></h1>
+                        <div className={teamcss.arrow}></div>
+                            <p className ={teamcss.name}>Jonathan Tsai</p>
+                            <p className={teamcss.title}>jontsai </p>
+                            <hr />
+                            <div className={teamcss.icons}>
+                                <img className={teamcss.flags} alt="United States" src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
+                                |<GitHubIcon />
+                                <LinkedInIcon />
+                            </div>
+                            <br />
+                        </div>
+                                <Image 
+                                    className={teamcss.avatorImg}
+                                    src="/teams/jontsai.png"
+                                    width={70}
+                                    height = {70}
+                                    alt="jontsai"
+                                />
                         </div>
                         <div className={teamcss.avator}>
-                            <Image 
-                                className={teamcss.avatorImg}
-                                src="/teams/jontsai.png"
-                                width={70}
-                                height = {70}
-                                alt="jontsai"
-                            />
+                        <div className={teamcss.avatorDetail}>
+                            <div className={teamcss.arrow}></div>
+                            <p className ={teamcss.name}>Yosef Ashenafi</p>
+                            <p className={teamcss.title}>Senior Software Developer</p>
+                            <hr />
+                            <div className={teamcss.icons}>
+                                <img className={teamcss.flags} alt="United States" src="https://purecatamphetamine.github.io/country-flag-icons/3x2/ET.svg"/>
+                                |<GitHubIcon />
+                                <LinkedInIcon />
+                            </div>
+                            <br />
                         </div>
-                        </div>
-                        <div className={teamcss.avator}>
                             <Image 
                                 className={teamcss.avatorImg}
                                 src="/teams/jos.jpg"
@@ -104,6 +126,18 @@ export default function Home() {
                             />
                         </div>
                         <div className={teamcss.avator}>
+                        <div className={teamcss.avatorDetail}>
+                        <div className={teamcss.arrow}></div>
+                            <p className ={teamcss.name}>Yosef Ashenafi</p>
+                            <p className={teamcss.title}>Senior Software Developer</p>
+                            <hr />
+                            <div className={teamcss.icons}>
+                                <img className={teamcss.flags} alt="United States" src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
+                                |<GitHubIcon />
+                                <LinkedInIcon />
+                            </div>
+                            <br />
+                        </div>
                             <Image 
                                 className={teamcss.avatorImg}
                                 src="/teams/team3.jpg"
@@ -113,9 +147,20 @@ export default function Home() {
                             />
                         </div>
                     </div>
-                    <div className={teamcss.oddImageLists}>
-                        
+                    <div className={teamcss.oddImageLists}>                    
                         <div className={teamcss.avator}>
+                        <div className={teamcss.avatorDetail}>
+                        <div className={teamcss.arrow}></div>
+                            <p className ={teamcss.name}>Jonathan Tsai</p>
+                            <p className={teamcss.title}>jontsai </p>
+                            <hr />
+                            <div className={teamcss.icons}>
+                                <img className={teamcss.flags} alt="United States" src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
+                                |<GitHubIcon />
+                                <LinkedInIcon />
+                            </div>
+                            <br />
+                        </div>
                             <Image 
                                 className={teamcss.avatorImg}
                                 src="/teams/team4.jpg"
@@ -134,6 +179,18 @@ export default function Home() {
                             />
                         </div>
                         <div className={teamcss.avator}>
+                        <div className={teamcss.avatorDetail}>
+                        <div className={teamcss.arrow}></div>
+                            <p className ={teamcss.name}>Yosef Ashenafi</p>
+                            <p className={teamcss.title}>Senior Software Developer</p>
+                            <hr />
+                            <div className={teamcss.icons}>
+                                <img className={teamcss.flags} alt="United States" src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
+                                |<GitHubIcon />
+                                <LinkedInIcon />
+                            </div>
+                            <br />
+                        </div>
                             <Image 
                                 className={teamcss.avatorImg}
                                 src="/teams/team6.png"
@@ -172,6 +229,18 @@ export default function Home() {
                             />
                         </div>
                         <div className={teamcss.avator}>
+                        <div className={teamcss.avatorDetail}>
+                        <div className={teamcss.arrow}></div>
+                            <p className ={teamcss.name}>Jonathan Tsai</p>
+                            <p className={teamcss.title}>jontsai </p>
+                            <hr />
+                            <div className={teamcss.icons}>
+                                <img className={teamcss.flags} alt="United States" src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
+                                |<GitHubIcon />
+                                <LinkedInIcon />
+                            </div>
+                            <br />
+                        </div>
                             <Image 
                                 className={teamcss.avatorImg}
                                 src="/teams/jontsai.png"
@@ -190,6 +259,18 @@ export default function Home() {
                             />
                         </div>
                         <div className={teamcss.avator}>
+                        <div className={teamcss.avatorDetail}>
+                        <div className={teamcss.arrow}></div>
+                            <p className ={teamcss.name}>Jonathan Tsai</p>
+                            <p className={teamcss.title}>jontsai </p>
+                            <hr />
+                            <div className={teamcss.icons}>
+                                <img className={teamcss.flags} alt="United States" src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
+                                |<GitHubIcon />
+                                <LinkedInIcon />
+                            </div>
+                            <br />
+                        </div>  
                             <Image 
                                 className={teamcss.avatorImg}
                                 src="/teams/jontsai.png"
@@ -211,6 +292,18 @@ export default function Home() {
                             />
                         </div>
                         <div className={teamcss.avator}>
+                        <div className={teamcss.avatorDetail}>
+                        <div className={teamcss.arrow}></div>
+                            <p className ={teamcss.name}>Jonathan Tsai</p>
+                            <p className={teamcss.title}>jontsai </p>
+                            <hr />
+                            <div className={teamcss.icons}>
+                                <img className={teamcss.flags} alt="United States" src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
+                                |<GitHubIcon />
+                                <LinkedInIcon />
+                            </div>
+                            <br />
+                        </div>
                             <Image 
                                 className={teamcss.avatorImg}
                                 src="/teams/jontsai.png"
@@ -239,7 +332,7 @@ export default function Home() {
                         </div>
                     </div>
                 
-                </div>
+                    </div>
                 </div>
             </div>
             {/* <div className={homecss.blue_section}>
