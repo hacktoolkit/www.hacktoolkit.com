@@ -13,11 +13,17 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'next/image';
-import ReactCountryFlag from "react-country-flag"
+import ReactCountryFlag from "react-country-flag";
+import Member from '../pages/member';
+import { Octokit } from "@octokit/core";
+import React, { useEffect, useState } from "react";
 
-export default function Home() {
+
+const Home = ({teams}) =>{
+    console.log(teams);
     return (
         <Page>
+            
             <div className={homecss.white_section}>
                 <div className={css.whitebackgroundimage}>
                         <div className={css.title}>
@@ -59,286 +65,39 @@ export default function Home() {
             </div>
             {/* Team Section */}
             <div className={homecss.team_section}>
+                {/* <Member /> */}
                 <div className={css.teambackgroundimage}>
                     <div className={css.topspace}>
-                    <h2 className={css.sectiontitle}>Teams</h2>
-                    <h4 className={css.sectionbodywhite}>Our valuable contributors from all over the world
-                    </h4>
-                    <div className={teamcss.evenImageLists}>
-                        <div className={teamcss.avator}>
-                        <div className={teamcss.avatorDetail}>
-                        <div className={teamcss.arrow}></div>
-                            <p className ={teamcss.name}>Jonathan Tsai</p>
-                            <p className={teamcss.title}>jontsai </p>
-                            <hr />
-                            <div className={teamcss.icons}>
-                                <img className={teamcss.flags} alt="United States" src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
-                                |<GitHubIcon />
-                                <LinkedInIcon />
-                            </div>
-                            <br />
-                        </div>
-                                <Image 
-                                    className={teamcss.avatorImg}
-                                    src="/teams/jontsai.png"
-                                    width={70}
-                                    height = {70}
-                                    alt="jontsai"
-                                />
-                        </div>
-                        <div className={teamcss.avator}>
-                        <div className={teamcss.avatorDetail}>
-                            <div className={teamcss.arrow}></div>
-                            <p className ={teamcss.name}>Yosef Ashenafi</p>
-                            <p className={teamcss.title}>Senior Software Developer</p>
-                            <hr />
-                            <div className={teamcss.icons}>
-                                <img className={teamcss.flags} alt="United States" src="https://purecatamphetamine.github.io/country-flag-icons/3x2/ET.svg"/>
-                                |<GitHubIcon />
-                                <LinkedInIcon />
-                            </div>
-                            <br />
-                        </div>
-                            <Image 
-                                className={teamcss.avatorImg}
-                                src="/teams/jos.jpg"
-                                width={70}
-                                height = {70}
-                                alt="jontsai"
-                            />
-                        </div>
-                        <div className={teamcss.avator}>
-                            <Image 
-                                className={teamcss.avatorImg}
-                                src="/teams/team1.png"
-                                width={70}
-                                height = {70}
-                                alt="jontsai"
-                            />
-                        </div>
-                        <div className={teamcss.avator}>
-                            <Image 
-                                className={teamcss.avatorImg}
-                                src="/teams/team2.png"
-                                width={70}
-                                height = {70}
-                                alt="jontsai"
-                            />
-                        </div>
-                        <div className={teamcss.avator}>
-                        <div className={teamcss.avatorDetail}>
-                        <div className={teamcss.arrow}></div>
-                            <p className ={teamcss.name}>Yosef Ashenafi</p>
-                            <p className={teamcss.title}>Senior Software Developer</p>
-                            <hr />
-                            <div className={teamcss.icons}>
-                                <img className={teamcss.flags} alt="United States" src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
-                                |<GitHubIcon />
-                                <LinkedInIcon />
-                            </div>
-                            <br />
-                        </div>
-                            <Image 
-                                className={teamcss.avatorImg}
-                                src="/teams/team3.jpg"
-                                width={70}
-                                height = {70}
-                                alt="jontsai"
-                            />
-                        </div>
-                    </div>
-                    <div className={teamcss.oddImageLists}>                    
-                        <div className={teamcss.avator}>
-                        <div className={teamcss.avatorDetail}>
-                        <div className={teamcss.arrow}></div>
-                            <p className ={teamcss.name}>Jonathan Tsai</p>
-                            <p className={teamcss.title}>jontsai </p>
-                            <hr />
-                            <div className={teamcss.icons}>
-                                <img className={teamcss.flags} alt="United States" src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
-                                |<GitHubIcon />
-                                <LinkedInIcon />
-                            </div>
-                            <br />
-                        </div>
-                            <Image 
-                                className={teamcss.avatorImg}
-                                src="/teams/team4.jpg"
-                                width={70}
-                                height = {70}
-                                alt="jontsai"
-                            />
-                        </div>
-                        <div className={teamcss.avator}>
-                            <Image 
-                                className={teamcss.avatorImg}
-                                src="/teams/team5.jpg"
-                                width={70}
-                                height = {70}
-                                alt="jontsai"
-                            />
-                        </div>
-                        <div className={teamcss.avator}>
-                        <div className={teamcss.avatorDetail}>
-                        <div className={teamcss.arrow}></div>
-                            <p className ={teamcss.name}>Yosef Ashenafi</p>
-                            <p className={teamcss.title}>Senior Software Developer</p>
-                            <hr />
-                            <div className={teamcss.icons}>
-                                <img className={teamcss.flags} alt="United States" src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
-                                |<GitHubIcon />
-                                <LinkedInIcon />
-                            </div>
-                            <br />
-                        </div>
-                            <Image 
-                                className={teamcss.avatorImg}
-                                src="/teams/team6.png"
-                                width={70}
-                                height = {70}
-                                alt="jontsai"
-                            />
-                        </div>
-                        <div className={teamcss.avator}>
-                            <Image 
-                                className={teamcss.avatorImg}
-                                src="/teams/team7.png"
-                                width={70}
-                                height = {70}
-                                alt="jontsai"
-                            />
-                        </div>
-                    </div>
-                    <div className={teamcss.evenImageLists}>
-                        <div className={teamcss.avator}>
-                            <Image 
-                                className={teamcss.avatorImg}
-                                src="/teams/jontsai.png"
-                                width={70}
-                                height = {70}
-                                alt="jontsai"
-                            />
-                        </div>
-                        <div className={teamcss.avator}>
-                            <Image 
-                                className={teamcss.avatorImg}
-                                src="/teams/jontsai.png"
-                                width={70}
-                                height = {70}
-                                alt="jontsai"
-                            />
-                        </div>
-                        <div className={teamcss.avator}>
-                        <div className={teamcss.avatorDetail}>
-                        <div className={teamcss.arrow}></div>
-                            <p className ={teamcss.name}>Jonathan Tsai</p>
-                            <p className={teamcss.title}>jontsai </p>
-                            <hr />
-                            <div className={teamcss.icons}>
-                                <img className={teamcss.flags} alt="United States" src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
-                                |<GitHubIcon />
-                                <LinkedInIcon />
-                            </div>
-                            <br />
-                        </div>
-                            <Image 
-                                className={teamcss.avatorImg}
-                                src="/teams/jontsai.png"
-                                width={70}
-                                height = {70}
-                                alt="jontsai"
-                            />
-                        </div>
-                        <div className={teamcss.avator}>
-                            <Image 
-                                className={teamcss.avatorImg}
-                                src="/teams/jontsai.png"
-                                width={70}
-                                height = {70}
-                                alt="jontsai"
-                            />
-                        </div>
-                        <div className={teamcss.avator}>
-                        <div className={teamcss.avatorDetail}>
-                        <div className={teamcss.arrow}></div>
-                            <p className ={teamcss.name}>Jonathan Tsai</p>
-                            <p className={teamcss.title}>jontsai </p>
-                            <hr />
-                            <div className={teamcss.icons}>
-                                <img className={teamcss.flags} alt="United States" src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
-                                |<GitHubIcon />
-                                <LinkedInIcon />
-                            </div>
-                            <br />
-                        </div>  
-                            <Image 
-                                className={teamcss.avatorImg}
-                                src="/teams/jontsai.png"
-                                width={70}
-                                height = {70}
-                                alt="jontsai"
-                            />
-                        </div>
-                    </div>
-                    <div className={teamcss.oddImageLists}>
+                        <h2 className={css.sectiontitle}>Teams</h2>
+                        <h4 className={css.sectionbodywhite}>Our valuable contributors from all over the world
+                        </h4>
                         
-                        <div className={teamcss.avator}>
-                            <Image 
-                                className={teamcss.avatorImg}
-                                src="/teams/jontsai.png"
-                                width={70}
-                                height = {70}
-                                alt="jontsai"
-                            />
+                        <div className={teamcss.ImageLists}>
+                            {teams.data.map(({id,login,html_url,avatar_url}) => (
+                                <Member key={id} login={login} html_url={html_url} avatar_url={avatar_url} />
+                            ))}
                         </div>
-                        <div className={teamcss.avator}>
-                        <div className={teamcss.avatorDetail}>
-                        <div className={teamcss.arrow}></div>
-                            <p className ={teamcss.name}>Jonathan Tsai</p>
-                            <p className={teamcss.title}>jontsai </p>
-                            <hr />
-                            <div className={teamcss.icons}>
-                                <img className={teamcss.flags} alt="United States" src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
-                                |<GitHubIcon />
-                                <LinkedInIcon />
-                            </div>
-                            <br />
-                        </div>
-                            <Image 
-                                className={teamcss.avatorImg}
-                                src="/teams/jontsai.png"
-                                width={70}
-                                height = {70}
-                                alt="jontsai"
-                            />
-                        </div>
-                        <div className={teamcss.avator}>
-                            <Image 
-                                className={teamcss.avatorImg}
-                                src="/teams/jontsai.png"
-                                width={70}
-                                height = {70}
-                                alt="jontsai"
-                            />
-                        </div>
-                        <div className={teamcss.avator}>
-                            <Image 
-                                className={teamcss.avatorImg}
-                                src="/teams/jontsai.png"
-                                width={70}
-                                height = {70}
-                                alt="jontsai"
-                            />
-                        </div>
-                    </div>
-                
                     </div>
                 </div>
             </div>
-            {/* <div className={homecss.blue_section}>
+            <div className={homecss.blue_section}>
                 <h2>Fourth Section</h2>
-            </div> */}
+            </div>
         </Page>
     );
 }
 
+export async function getStaticProps() {
+    const octokit = new Octokit({
+        auth: process.env.API_KEY,
+        });
+        const res = await octokit.request("/organizations/5404851/team/509218/members");
+        const teams = await res;
+        return {
+            props: { 
+                teams,
+                },
+        }
+}
+
+export default Home

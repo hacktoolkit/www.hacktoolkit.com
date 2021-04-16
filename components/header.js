@@ -17,7 +17,7 @@ export function Header({ children }) {
         });
         const target = link.url.substring(0, 4) === 'http' ? '_blank' : null;
         return (    
-            <Link href= {link.name.toLowerCase() =="home" ? "/" : `/${link.name.toLowerCase()}`} >
+            <Link key={index} href= {link.name.toLowerCase() =="home" ? "/" : `/${link.name.toLowerCase()}`} >
                 <a className={classes}> {link.name}</a>
             </Link>
             // <Nav.Item key={`link-${index}`}>
