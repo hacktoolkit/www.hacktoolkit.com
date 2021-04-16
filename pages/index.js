@@ -17,6 +17,7 @@ import ReactCountryFlag from "react-country-flag";
 import Member from '../pages/member';
 import { Octokit } from "@octokit/core";
 import React, { useEffect, useState } from "react";
+import TeamJs from '../components/js/team_section';
 
 
 const Home = ({teams}) =>{
@@ -71,7 +72,7 @@ const Home = ({teams}) =>{
                         <h2 className={css.sectiontitle}>Teams</h2>
                         <h4 className={css.sectionbodywhite}>Our valuable contributors from all over the world
                         </h4>
-                        
+                        <TeamJs />
                         <div className={teamcss.ImageLists}>
                             {teams.data.map(({id,login,html_url,avatar_url}) => (
                                 <Member key={id} login={login} html_url={html_url} avatar_url={avatar_url} />
@@ -80,8 +81,10 @@ const Home = ({teams}) =>{
                     </div>
                 </div>
             </div>
-            <div className={homecss.blue_section}>
-                <h2>Fourth Section</h2>
+            <div className={homecss.service_section}>
+                    <div className={css.topspace}>
+                        <h2>Fourth Section</h2>
+                    </div>
             </div>
         </Page>
     );

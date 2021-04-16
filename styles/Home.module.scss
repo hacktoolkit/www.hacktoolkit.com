@@ -81,13 +81,13 @@
     justify-content: center;
 }
 .team_section {
-    // background: #667db6;  /* fallback for old browsers */
-    // background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
-    // background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-image: url('../public/teambg.jpg');
+    background: #4b6cb7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    // background-image: url('../public/teambg.jpg');
     background-position-y: 100% !important;
-    
-    height: 900px;
+    height: 950px;
     width: 100% !important;
     color: white;
     display: flex;
@@ -106,7 +106,7 @@
 }
 .service_section{
     height: 700px;
-    background-image: url('../public/teambg.jpg');
+    background-image: url('../public/background.jpg');
     width: 100% !important;
     color: black;
     display: flex;
