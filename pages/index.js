@@ -17,8 +17,8 @@ import ReactCountryFlag from "react-country-flag";
 import Member from '../pages/member';
 import { Octokit } from "@octokit/core";
 import React, { useEffect, useState } from "react";
-import TeamJs from '../components/js/team_section';
-
+import Card from '../pages/card';
+import Link from 'next/link';
 
 const Home = ({teams}) =>{
     console.log(teams);
@@ -72,7 +72,6 @@ const Home = ({teams}) =>{
                         <h2 className={css.sectiontitle}>Teams</h2>
                         <h4 className={css.sectionbodywhite}>Our valuable contributors from all over the world
                         </h4>
-                        <TeamJs />
                         <div className={teamcss.ImageLists}>
                             {teams.data.map(({id,login,html_url,avatar_url}) => (
                                 <Member key={id} login={login} html_url={html_url} avatar_url={avatar_url} />
@@ -83,7 +82,16 @@ const Home = ({teams}) =>{
             </div>
             <div className={homecss.service_section}>
                     <div className={css.topspace}>
-                        <h2>Fourth Section</h2>
+                        <h2 className={css.sectiontitle}>Services</h2>
+                        <h4 className={css.sectionbodygray}>Our world class services which makes your life easier </h4>
+                        <div className={css.cardHolder}>
+                            <Card title="django-htk" about="A set of apps, utilities, middlewares, etc for Django" />
+                            <Card title="xterm.js" about="A drop-in JavaScript module to colorize Xterm output on your webpages. Absolutely no external dependencies required!"/>
+                            <Card title="code_challenges" about="Interview hacks, programming interviews, take-home interviews, programming challenges, etc."/>
+                        </div>
+                        <Link href="/services">
+                            <h2 className={css.seeMore}>See more services...</h2>
+                        </Link>
                     </div>
             </div>
         </Page>
