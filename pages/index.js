@@ -82,15 +82,15 @@ const Home = ({teams}) =>{
             </div>
             <div className={homecss.service_section}>
                     <div className={css.topspace}>
-                        <h2 className={css.sectiontitle}>Services</h2>
-                        <h4 className={css.sectionbodygray}>Our world class services which makes your life easier </h4>
+                        <h2 className={css.sectiontitle}>Projects</h2>
+                        <h4 className={css.sectionbodygray}>Our world class projects which makes your life easier </h4>
                         <div className={css.cardHolder}>
                             <Card title="django-htk" about="A set of apps, utilities, middlewares, etc for Django" />
                             <Card title="xterm.js" about="A drop-in JavaScript module to colorize Xterm output on your webpages. Absolutely no external dependencies required!"/>
                             <Card title="code_challenges" about="Interview hacks, programming interviews, take-home interviews, programming challenges, etc."/>
                         </div>
-                        <Link href="/services">
-                            <h2 className={css.seeMore}>See more services...</h2>
+                        <Link href="/projects">
+                            <h2 className={css.seeMore}>See more projects...</h2>
                         </Link>
                     </div>
             </div>

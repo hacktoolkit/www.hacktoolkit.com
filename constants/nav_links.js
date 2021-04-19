@@ -4,8 +4,8 @@ const NAV_LINKS = [
         url: '/',
     },
     {
-        name: 'Services',
-        url: '/services',
+        name: 'Projects',
+        url: '/projects',
     },
     {
         name: 'Community',
