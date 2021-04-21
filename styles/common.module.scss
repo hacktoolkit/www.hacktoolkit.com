@@ -242,6 +242,23 @@
     position:static;
     bottom: 20px;
 }
+.cardBelowText{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 1.4rem;
+    display: none;
+    transition: 500ms ease;
+}
+.cardBelow:hover>.cardBelowText{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms ease;
+}
 .cardIcons{
     margin: 20px;
     display: flex;

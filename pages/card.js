@@ -17,7 +17,9 @@ const Card = ({title, about}) =>{
             <div className={css.cardTitle}>{title}</div>
             <div className={css.cardAbout}>{about}</div>
             <div className={css.cardBelowLine}></div>
-            <div className={css.cardBelow}></div>
+            <div className={css.cardBelow}>
+                <h3 className={css.cardBelowText}>Open Repository</h3>
+            </div>
         </div>
     )
 }
