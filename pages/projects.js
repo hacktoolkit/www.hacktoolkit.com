@@ -9,9 +9,11 @@ export default function About() {
     return (
         <Page>
             <div className={css.overlay}>
-                <div className={css.banner}></div>
+                <div className={css.banner}>
+                </div>
             </div>
-            <h1 className={css.title}>Services</h1>
+            <h1 className={css.bannerTitle}>Projects</h1>
+
         </Page>
     );
 }

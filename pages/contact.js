@@ -13,7 +13,11 @@ function About() {
 
     return (
         <Page>
-            <h1 className={css.title}>Contact</h1>
+            <div className={css.overlay}>
+                <div className={css.contactsBanner}>
+                </div>
+            </div>
+            <h1 className={css.bannerTitle}>Contact</h1>
         </Page>
     );
 }

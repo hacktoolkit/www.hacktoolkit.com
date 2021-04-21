@@ -8,7 +8,11 @@ import Col from 'react-bootstrap/Col';
 export default function About() {
     return (
         <Page>
-            <h1 className={css.title}>Community</h1>
+            <div className={css.overlay}>
+                <div className={css.communityBanner}>
+                </div>
+            </div>
+            <h1 className={css.bannerTitle}>Community</h1>
         </Page>
     );
 }
