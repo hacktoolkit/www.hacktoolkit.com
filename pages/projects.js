@@ -8,6 +8,7 @@ import Card from '../pages/card';
 
 const handleClick = (c) =>{
     if (process.browser) {
+        console.log(c);
         var x, i;
         x = document.getElementsByClassName("common_filterCard__3g-4W");
         console.log(x);
