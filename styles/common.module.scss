@@ -295,6 +295,10 @@
 }
 .filterCard{
     color: black;
+    display: none;
+}
+.show > .filterCard{
+    display: block !important;
 }
 .filterCriteriaText:active{
     .nextJs{
