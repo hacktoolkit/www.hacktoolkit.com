@@ -85,9 +85,9 @@ const Home = ({teams}) =>{
                         <h2 className={css.sectiontitle}>Projects</h2>
                         <h4 className={css.sectionbodygray}>Our world class projects which makes your life easier </h4>
                         <div className={css.cardHolder}>
-                            <Card title="django-htk" about="A set of apps, utilities, middlewares, etc for Django" />
-                            <Card title="xterm.js" about="A drop-in JavaScript module to colorize Xterm output on your webpages. Absolutely no external dependencies required!"/>
-                            <Card title="code_challenges" about="Interview hacks, programming interviews, take-home interviews, programming challenges, etc."/>
+                            <Card id="15924904" name="django-htk" description="A set of apps, utilities, middlewares, etc for Django" forks_count="" watchers_count="" language="" html_url="https://github.com/hacktoolkit/django-htk" />
+                            <Card id="15924904" name="xterm.js" description="A set of apps, utilities, middlewares, etc for Django" forks_count="" watchers_count="" language="" html_url="https://github.com/hacktoolkit/django-htk" />
+                            <Card id="15924904" name="django-htk" description="A set of apps, utilities, middlewares, etc for Django" forks_count="" watchers_count="" language="" html_url="https://github.com/hacktoolkit/django-htk" />
                         </div>
                         <Link href="/projects">
                             <h2 className={css.seeMore}>See more projects...</h2>

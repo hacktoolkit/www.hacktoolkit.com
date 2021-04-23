@@ -1,7 +1,7 @@
 import Page from '../components/base_page';
 import React, {useEffect} from "react";
 import css from '../styles/common.module.scss';
-
+import { Octokit } from "@octokit/core";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from '../pages/card';
@@ -58,8 +58,8 @@ const handleClick = (c) =>{
     }
 }
 
-export default function About() {
-
+const Project = ({projects}) => {
+    console.log({projects});
     return (
         <Page>
             <div className={css.overlay}>
@@ -75,69 +75,35 @@ export default function About() {
                 <div className={css.filterCriteriaText} onClick={() => {handleClick("all")}} >All</div>
                 <div className={css.filterCriteriaText} onClick={() => {handleClick("Python")}}>Python</div>
                 <div className={css.filterCriteriaText} onClick={() => {handleClick("NextJs")}}>Javascript</div>
-                <div className={css.filterCriteriaText} onClick={() => {handleClick("Ruby")}}>HTML</div>
+                <div className={css.filterCriteriaText} onClick={() => {handleClick("Ruby")}}>Java</div>
                 <div className={css.filterCriteriaText} onClick={() => {handleClick("Ruby")}}>CSS</div>
                 <div className={css.filterCriteriaText} onClick={() => {handleClick("Ruby")}}>Ruby</div>
+                <div className={css.filterCriteriaText} onClick={() => {handleClick("Ruby")}}>Others</div>
             </div>
             <hr className={css.projectStartLine}/>
             <div className={css.fullProjectsListCard}>
-                <div className={css.filterCard}>
-                    <div className={css.nextJs}>
-                        <Card title="django-htk" about="A set of apps, utilities, middlewares, etc for Django" />
+                {projects.data.map(({id,name,description,forks_count,watchers_count,language,html_url}) => (
+                    <div className={css.filterCard}>
+                        <div className={css.nextJs}>
+                            <Card id={id} name={name} description={description} forks_count={forks_count} watchers_count={watchers_count} language={language} html_url={html_url} />
+                        </div>
                     </div>
-                </div>
-                <div className={css.filterCard}>
-                    <div className={css.nextJs}>
-                        <Card title="phablytics" about="Analytics, metrics, and reports for Phabricator (https://phacility.com/phabricator/)." />
-                    </div>
-                </div>
-                <div className={css.filterCard}>
-                    <div className={css.nextJs}>
-                        <Card title="xterm.js" about="A drop-in JavaScript module to colorize Xterm output on your webpages. Absolutely no external dependencies required!" />
-                    </div>
-                </div>
-                <div className={css.filterCard}>
-                    <div className={css.nextJs}>
-                        <Card title="chrome-extensions" about="A collection of awesome Chrome extensions" />
-                    </div>
-                </div>
-                <div className={css.filterCard}>
-                    <div className={css.vueJs}>
-                        <Card title="django-htk" about="A set of apps, utilities, middlewares, etc for Django" />
-                    </div>
-                </div>
-                <div className={css.filterCard}>
-                    <div className={css.vueJs}>
-                        <Card title="django-htk" about="A set of apps, utilities, middlewares, etc for Django" />
-                    </div>
-                </div>
-                <div className={css.filterCard}>
-                    <div className={css.vueJs}>
-                        <Card title="django-htk" about="A set of apps, utilities, middlewares, etc for Django" />
-                    </div>
-                </div>
-                <div className={css.filterCard}>
-                    <div className={css.vueJs}>
-                        <Card title="django-htk" about="A set of apps, utilities, middlewares, etc for Django" />
-                    </div>
-                </div>
-                <div className={css.filterCard}>
-                    <div className={css.python}>
-                        <Card title="django-htk" about="A set of apps, utilities, middlewares, etc for Django" />
-                    </div>
-                </div>
-                <div className={css.filterCard}>
-                    <div className={css.python}>
-                        <Card title="django-htk" about="A set of apps, utilities, middlewares, etc for Django" />
-                    </div>
-                </div>
-                <div className={css.filterCard}>
-                    <div className={css.python}>
-                        <Card title="django-htk" about="A set of apps, utilities, middlewares, etc for Django" />
-                    </div>
-                </div>
-                
+                ))}
             </div>
         </Page>
     );
 }
+
+export async function getStaticProps() {
+    const octokit = new Octokit({
+        auth: process.env.API_KEY,
+        });
+        const res = await octokit.request("/users/hacktoolkit/repos");
+        const projects = await res;
+        return {
+            props: { 
+                projects,
+                },
+        }
+}
+export default Project;
