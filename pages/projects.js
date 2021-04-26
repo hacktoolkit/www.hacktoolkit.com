@@ -69,19 +69,22 @@ const Project = ({projects}) => {
                 </div>
             </div>
             <h1 className={css.bannerTitle}>Projects</h1>
-            <div className={css.subTitle}>
-                <h4>Our world class project lists</h4>
-                <hr />
+            <div className={css.topMenus}>
+                <div className={css.subTitle}>
+                    <h4>Our world class project lists</h4>
+                    <hr />
+                </div>
+        
+                <div className={css.filterCriteria}>
+                    <div className={`${css.filterCriteriaText} ${css.filterMenu} ${css.active}`} onClick={() => {handleClick("all")}} >All</div>
+                    <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("Python")}}>Python</div>
+                    <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("JavaScript")}}>Javascript</div>
+                    <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("Java")}}>Java</div>
+                    <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("CSS")}}>CSS</div>
+                    <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("Ruby")}}>Ruby</div>
+                </div>
+                <hr className={css.projectStartLine}/>
             </div>
-            <div className={css.filterCriteria}>
-                <div className={`${css.filterCriteriaText} ${css.filterMenu} ${css.active}`} onClick={() => {handleClick("all")}} >All</div>
-                <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("Python")}}>Python</div>
-                <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("JavaScript")}}>Javascript</div>
-                <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("Java")}}>Java</div>
-                <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("CSS")}}>CSS</div>
-                <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("Ruby")}}>Ruby</div>
-            </div>
-            <hr className={css.projectStartLine}/>
             <div className={css.fullProjectsListCard}>
                 {projects.data.map(({id,name,description,forks_count,watchers_count,language,html_url}) => (
                     <div className={`${language} ${css.show} ${css.cards}`}>

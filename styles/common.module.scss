@@ -421,6 +421,7 @@
     cursor: pointer;
 }
 .subTitle{
+    text-align: center;
     margin-top: 450px;
     font-style: italic;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -433,6 +434,18 @@
     font-size: 18px;
     width: 700px;
     color: gray;
+}
+.topMenus{
+    position:absolute;
+    text-align: center;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 .filterCriteriaText:hover{
     cursor: pointer;
@@ -449,6 +462,7 @@
     width: 1500px;
     padding: 20px;
     margin-left: 205px;
+    margin-top: 600px;
 }
 .cards{
     transition: 500ms ease;   
