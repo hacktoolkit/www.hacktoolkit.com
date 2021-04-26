@@ -100,7 +100,7 @@ const Home = ({teams}) =>{
 
 export async function getStaticProps() {
     const octokit = new Octokit({
-        auth: process.env.API_KEY,
+        auth: process.env.GITHUB_API_KEY ,
         });
         const res = await octokit.request("/organizations/5404851/team/509218/members");
         const teams = await res;

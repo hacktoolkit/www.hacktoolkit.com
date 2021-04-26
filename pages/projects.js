@@ -9,24 +9,23 @@ import classNames from 'classnames';
 
 const handleClick = (c) =>{
     if (process.browser) {
-        console.log(c);
         var x, i;
         x = document.getElementsByClassName(`${css.cards}`);
         console.log(x.length);
         // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
         for (i = 0; i < x.length; i++) {
             // console.log(x[i].className);
-            w3RemoveClass(x[i], `${css.show}`);
+            RemoveClass(x[i], `${css.show}`);
             if(x[i] != null){
                 var languageName = x[i].className.split(" ");
                 var languageNameValue = languageName[0];
-                if (languageNameValue == c || c == "all") w3AddClass(x[i], `${css.show}`);
+                if (languageNameValue == c || c == "all") AddClass(x[i], `${css.show}`);
             }
         }
     
 
         // Show filtered elements
-        function w3AddClass(element, name) {
+        function AddClass(element, name) {
         var i, arr1, arr2;
         arr1 = element.className.split(" ");
         arr2 = name.split(".");
@@ -38,29 +37,27 @@ const handleClick = (c) =>{
         }
 
         // Hide elements that are not selected
-        function w3RemoveClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(".");
-        for (i = 0; i < arr2.length; i++) {
-            while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
+        function RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(".");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
             }
-        }
-        element.className = arr1.join(" ");
+            element.className = arr1.join(" ");
         }
 
-        // Add active class to the current control button (highlight it)
-        //     var btnContainer = document.getElementById("myBtnContainer");
-        //     var btns = btnContainer.getElementsByClassName("common_filterCriteriaText__2V-6K");
-        //     for (var i = 0; i < btns.length; i++) {
-        //     btns[i].addEventListener("click", function() {
-        //         var current = document.getElementsByClassName("active");
-        //         current[0].className = current[0].className.replace(" active", "");
-        //         this.className += " active";
-        //     });
-        //     console.log(e)
-        // }
+        //Add active class to the current control button (highlight it)
+        var menus = document.getElementsByClassName(`${css.filterMenu}`);
+        for (var i = 0; i < menus.length; i++) {
+            menus[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName(`${css.active}`);
+                current[0].className = current[0].className.replace(`${css.active}`, "");
+                this.className += " "+`${css.active}`;
+            });
+        }
     }
 }
 
@@ -77,12 +74,12 @@ const Project = ({projects}) => {
                 <hr />
             </div>
             <div className={css.filterCriteria}>
-                <div className={css.filterCriteriaText} onClick={() => {handleClick("all")}} >All</div>
-                <div className={css.filterCriteriaText} onClick={() => {handleClick("Python")}}>Python</div>
-                <div className={css.filterCriteriaText} onClick={() => {handleClick("JavaScript")}}>Javascript</div>
-                <div className={css.filterCriteriaText} onClick={() => {handleClick("Java")}}>Java</div>
-                <div className={css.filterCriteriaText} onClick={() => {handleClick("CSS")}}>CSS</div>
-                <div className={css.filterCriteriaText} onClick={() => {handleClick("Ruby")}}>Ruby</div>
+                <div className={`${css.filterCriteriaText} ${css.filterMenu} ${css.active}`} onClick={() => {handleClick("all")}} >All</div>
+                <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("Python")}}>Python</div>
+                <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("JavaScript")}}>Javascript</div>
+                <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("Java")}}>Java</div>
+                <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("CSS")}}>CSS</div>
+                <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("Ruby")}}>Ruby</div>
             </div>
             <hr className={css.projectStartLine}/>
             <div className={css.fullProjectsListCard}>
@@ -101,7 +98,7 @@ const Project = ({projects}) => {
 
 export async function getStaticProps() {
     const octokit = new Octokit({
-        auth: process.env.API_KEY,
+        auth: process.env.GITHUB_API_KEY,
         });
         const res = await octokit.request("/users/hacktoolkit/repos");
         const projects = await res;

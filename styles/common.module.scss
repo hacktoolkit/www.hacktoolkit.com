@@ -172,7 +172,16 @@
     text-align: center;
     color: #e6e5e5;
 }
-
+.active{
+    color: black;
+    font-weight: bold;
+}
+.filterMenu{
+    color:black;
+    cursor: pointer !important;
+    background-color: white;
+    border: 0px;
+}
 .sectionbodywhite {
     padding-left: 400px;
     padding-right: 400px;
@@ -299,7 +308,15 @@
 }
 .show > .filterCard{
     display: block !important;
+    animation-name: zoomin;
+    animation-duration: 500ms;
 }
+@keyframes zoomin {
+  0%   {transform: scale(0);}
+  
+  100% {transform: scale(1);}
+}
+
 .filterCriteriaText:active{
     .nextJs{
         display: none;
@@ -432,6 +449,9 @@
     width: 1500px;
     padding: 20px;
     margin-left: 205px;
+}
+.cards{
+    transition: 500ms ease;   
 }
 //Projects Page End
 
