@@ -6,6 +6,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from '../pages/card';
 import classNames from 'classnames';
+import projects from '../static/data/project_data.json';
+
 
 const handleClick = (c) =>{
     if (process.browser) {
@@ -61,7 +63,7 @@ const handleClick = (c) =>{
     }
 }
 
-const Project = ({projects}) => {
+const Project = () => {
     return (
         <Page>
             <div className={css.overlay}>
@@ -99,16 +101,16 @@ const Project = ({projects}) => {
     );
 }
 
-export async function getStaticProps() {
-    const octokit = new Octokit({
-        auth: process.env.GITHUB_API_KEY,
-        });
-        const res = await octokit.request("/users/hacktoolkit/repos");
-        const projects = await res;
-        return {
-            props: { 
-                projects,
-                },
-        }
-}
+// export async function getStaticProps() {
+//     const octokit = new Octokit({
+//         auth: process.env.GITHUB_API_KEY,
+//         });
+//         const res = await octokit.request("/users/hacktoolkit/repos");
+//         const projects = await res;
+//         return {
+//             props: { 
+//                 projects,
+//                 },
+//         }
+// }
 export default Project;
