@@ -21,7 +21,11 @@ const handleClick = (c) =>{
             if(x[i] != null){
                 var languageName = x[i].className.split(" ");
                 var languageNameValue = languageName[0];
-                if (languageNameValue == c || c == "all") AddClass(x[i], `${css.show}`);
+                if (languageNameValue == c || c == "all") {AddClass(x[i], `${css.show}`);}
+                else if(c == "other"){
+                    // if(c != "Ruby" && c!="CSS" && c!="Java" && c!= "JavaScript" && c!= "Python")
+                    //     AddClass(x[i], `${css.show}`);
+                }
             }
         }
     
@@ -84,6 +88,7 @@ const Project = () => {
                     <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("Java")}}>Java</div>
                     <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("CSS")}}>CSS</div>
                     <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("Ruby")}}>Ruby</div>
+                    <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("other")}}>Other</div>
                 </div>
                 <hr className={css.projectStartLine}/>
             </div>

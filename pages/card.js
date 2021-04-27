@@ -18,7 +18,7 @@ const Card = ( {id,name,description ,forks_count ,watchers_count ,language ,html
                 </div>
             </div>
             <div className={css.cardLine}></div>
-            <div className={css.cardTitle}>{name}</div>
+            <div className={css.cardTitle}><a href={html_url} target="_blank">{name}</a></div>
             <div className={css.cardAbout}>{description}</div>
             <div className={css.cardBelowLine}></div>
             <div className={css.cardBelow}>

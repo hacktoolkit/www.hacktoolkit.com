@@ -192,8 +192,8 @@
 }
 
 .sectionbodygray {
-    padding-left: 400px;
-    padding-right: 400px;
+    padding-left: 350px;
+    padding-right: 350px;
     font-size: 1rem;
     text-align: center;
     color: gray;
@@ -340,6 +340,9 @@
     font-weight: bold;
     color: #717fe3;
 }
+.cardTitle > a{
+    text-decoration: none;
+}
 .fullcard{
     border: 1px solid lightgray;
     width: 300px;
@@ -423,8 +426,10 @@
 .subTitle{
     text-align: center;
     margin-top: 450px;
-    font-style: italic;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    // font-family:'Courier New', Courier, monospace;
+    // font-weight: bold;
+    // font-style: italic;
+    // font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.5rem;
 }
 .filterCriteria{

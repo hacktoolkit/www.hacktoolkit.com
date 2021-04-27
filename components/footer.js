@@ -9,10 +9,10 @@ import css from '../styles/footer.module.scss';
 library.add(fab, faFacebookF, faTwitter);
 
 export function Footer({ children }) {
+    const currentYear = new Date().getFullYear();
     return (
         <footer className={css.footer}>
-            hacktoolkit &copy; 2021 hacktoolkit | Disclaimer | Privacy | Cookie
-            Settings
+            &copy; Hacktoolkit 2014-{currentYear}
         </footer>
     );
 }

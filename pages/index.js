@@ -69,8 +69,8 @@ const Home = () =>{
                 {/* <Member /> */}
                 <div className={css.teambackgroundimage}>
                     <div className={css.topspace}>
-                        <h2 className={css.sectiontitle}>Teams</h2>
-                        <h4 className={css.sectionbodywhite}>Our valuable contributors from all over the world
+                        <h2 className={css.sectiontitle}>Community</h2>
+                        <h4 className={css.sectionbodywhite}>Our valuable contributors and collaborators come from all over the world
                         </h4>
                         <div className={teamcss.ImageLists}>
                             {teams.data.map(({id,login,html_url,avatar_url}) => (
@@ -83,7 +83,7 @@ const Home = () =>{
             <div className={homecss.service_section}>
                     <div className={css.topspace}>
                         <h2 className={css.sectiontitle}>Projects</h2>
-                        <h4 className={css.sectionbodygray}>Our world class projects which makes your life easier </h4>
+                        <h4 className={css.sectionbodygray}>Convenient open-source projects enabling rich experiences and world-class applications </h4>
                         <div className={css.cardHolder}>
                             <Card id="15924904" name="django-htk" description="A set of apps, utilities, middlewares, etc for Django" forks_count="" watchers_count="" language="" html_url="https://github.com/hacktoolkit/django-htk" />
                             <Card id="15924904" name="xterm.js" description="A set of apps, utilities, middlewares, etc for Django" forks_count="" watchers_count="" language="" html_url="https://github.com/hacktoolkit/django-htk" />
