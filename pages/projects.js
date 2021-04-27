@@ -49,7 +49,7 @@ const handleClick = (c) =>{
             element.className = arr1.join(" ");
         }
 
-        //Add active class to the current control button (highlight it)
+        //Add active class to the current control menu (highlight it)
         var menus = document.getElementsByClassName(`${css.filterMenu}`);
         for (var i = 0; i < menus.length; i++) {
             menus[i].addEventListener("click", function(){
