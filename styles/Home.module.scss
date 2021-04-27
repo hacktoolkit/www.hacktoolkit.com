@@ -65,7 +65,7 @@
 .black_section {
     height: 700px;
     background: #172026 !important;
-    width: 100%;
+    width: auto;
     color: white;
     display: flex;
     // align-items: center;
@@ -88,7 +88,7 @@
     // background-image: url('../public/teambg.jpg');
     background-position-y: 100% !important;
     height: 950px;
-    width: 100% !important;
+    width: auto;
     color: white;
     display: flex;
     align-items: center;
