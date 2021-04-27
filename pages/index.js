@@ -19,9 +19,11 @@ import { Octokit } from "@octokit/core";
 import React, { useEffect, useState } from "react";
 import Card from '../pages/card';
 import Link from 'next/link';
-import teams from '../static/data/team_members.json';
+// import teams from '../static/data/team_members.json';
 
-const Home = () =>{
+const Home = ({teams}) =>{
+        console.log(teams);
+
     return (
         <Page>
             
@@ -106,7 +108,6 @@ export async function getStaticProps()
     
         const res = await octokit.request("/organizations/5404851/team/509218/members");
         const teams = await res;
-
         return {
             props: { 
                 teams,
