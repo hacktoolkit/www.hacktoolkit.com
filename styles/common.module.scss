@@ -432,6 +432,11 @@
     // font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.5rem;
 }
+.subSubTitle{
+    text-align: center;
+    color: gray;
+    width:700px;
+}
 .filterCriteria{
     display: flex;  
     justify-content: space-between;
@@ -490,18 +495,7 @@
 //community page end
 
 //about page start
-.aboutBanner{
-    background-image: url('../public/about.png');
-    position: fixed;
-    width: 100%;
-    height: 300px;
-    top: 95px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    cursor: pointer;
-    opacity: 0.1;
-}
+
 //about page end
 //blog page start
 .blogBanner{
@@ -520,8 +514,8 @@
 
 //contact us page start
 
-.contactsBanner{
-    background-image: url('../public/contacts.jpg');
+.aboutBanner{
+    background-image: url('../public/about.png');
     position: relative;
     width: 100%;
     height: 300px;
@@ -633,3 +627,109 @@
     box-shadow: 0 0 1px 1px #052f55;
 }
 //contact us page end
+
+//about page begin
+.featureRow{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin-bottom: 50px;
+}
+.featureCard{
+    width: 300px;
+    text-align: center;
+}
+.spacer{
+    margin-top: 10px;
+}
+.featureCardHolder{
+    width: 300px;
+    text-align: center;
+    border: 1px solid #f7f7f7;
+    border-radius: 20px;
+    padding:10px 20px 0px 20px;
+    -webkit-box-shadow: 0 0 10px 10px #f5f5f5;
+    -moz-box-shadow: 0 0 10px 10px #f5f5f5;
+    box-shadow: 0 0 10px 10px #f5f5f5;
+
+}
+.featureCardHolder:hover{
+    -webkit-box-shadow: 0 0 15px 10px #f5f5f5;
+    -moz-box-shadow: 0 0 15px 10px #f5f5f5;
+    box-shadow: 0 0 15px 10px #f5f5f5;
+    cursor: pointer;
+    transform:scale(1.1);
+    transition: 500ms ease-in-out;
+}
+.featureDetail{
+    color: gray;
+}
+.aboutSection1Holder{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+    // align-items: flex-start;
+    width: 1100px;
+    height: 95px;
+}
+.aboutSection1Left{
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    margin-top: 40px;
+    // padding-right: 60px;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+.aboutSection1Header{
+    width: 400px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.aboutSection1Right{
+    text-align: left;
+    display: flex;
+    max-width: 60%;
+    margin-top: 80px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    margin-right: 0px;
+}
+.aboutSection1LeftLists{
+    display: flex;
+    margin-top: 10px;
+}
+.aboutSection1LeftListIcon{
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.aboutSection1LeftListDetail{
+    margin-top: 5px;
+    max-width: 600px;
+    color: gray;
+}
+.hrBlur{
+    background-color: white !important;
+    height: 0.2px !important;
+    width: 2% !important;
+}
+.subscribe{
+    margin-top: 40px;
+    font-weight: bold;
+    background-image: url('../public/map.png');
+    width: 700px;
+    text-align: center;
+    height: 300px;
+}
+.subscribeHeader{
+    margin-top: 50px;
+}
+.subscribeSubHeader{
+    color: gray;
+}
+//about page end
