@@ -68,6 +68,7 @@ const handleClick = (c) =>{
 }
 
 const Project = () => {
+    console.log(projects);
     return (
         <Page>
             <div className={css.overlay}>
@@ -93,13 +94,16 @@ const Project = () => {
                 <hr className={css.projectStartLine}/>
             </div>
             <div className={css.fullProjectsListCard}>
-                {projects.data.map(({id,name,description,forks_count,watchers_count,language,html_url}) => (
-                    <div className={`${language} ${css.show} ${css.cards}`}>
-                        <div className={css.filterCard}>
-                            {/* <div className={classNames(language ,css.show)}> */}
-                                <Card Key={id} id={id} name={name} description={description} forks_count={forks_count} watchers_count={watchers_count} language={language} html_url={html_url} />
+                {projects.data.map(({id,name,description,forks_count,watchers_count,language,html_url,fork}) => (
+                    <>
+                    {!fork ? 
+                        <div className={`${language} ${css.show} ${css.cards}`}>
+                            <div className={css.filterCard}>
+                                    <Card Key={id} id={id} name={name} description={description} forks_count={forks_count} watchers_count={watchers_count} language={language} html_url={html_url} />
                             </div>
-                    </div>
+                        </div>
+                    :null}
+                    </>
                 ))}
             </div>
         </Page>
