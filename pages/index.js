@@ -24,6 +24,7 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import { blue } from '@material-ui/core/colors';
 
 const Home = () =>{
+    console.log(teams)
     return (
         <Page>
             

@@ -14,7 +14,7 @@ export default function Page({ children }) {
         <div className={css.container}>
             <Head>
                 <title>hacktoolkit</title>
-
+                
                 <meta charSet="utf-8" />
                 <meta
                     name="viewport"
@@ -26,7 +26,8 @@ export default function Page({ children }) {
             <CommonCSS />
             <CommonJS />
             <Header />
-            <main className={css.main}>{children}</main>
+            <main className={css.main}>{children}
+            </main>
             <Footer />
             <NonBlockingJS />
         </div>

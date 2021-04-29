@@ -112,6 +112,19 @@
     align-items: center;
     justify-content: center;
 }
+
+.community_section{
+    background-position-y: 100% !important;
+    // background-image: url('../public/team.png');
+     height: 950px;
+    width: auto;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
 .blue_section {
     height: 700px;
     background-image: url('../public/teambg.jpg');

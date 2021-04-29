@@ -23,7 +23,7 @@ const handleClick = (c) =>{
                 var languageNameValue = languageName[0];
                 if (languageNameValue == c || c == "all") {AddClass(x[i], `${css.show}`);}
                 else if(c == "other"){
-                    if(languageNameValue != "Ruby" && languageNameValue!="CSS" && languageNameValue!="Java" && languageNameValue!= "JavaScript" && languageNameValue!= "Python")
+                    if(languageNameValue != "Swift" && languageNameValue!="CSS" && languageNameValue!="Java" && languageNameValue!= "JavaScript" && languageNameValue!= "Python")
                         AddClass(x[i], `${css.show}`);
                 }
             }
@@ -68,7 +68,6 @@ const handleClick = (c) =>{
 }
 
 const Project = () => {
-    console.log(projects);
     return (
         <Page>
             <div className={css.overlay}>
@@ -85,10 +84,11 @@ const Project = () => {
                 <div className={css.filterCriteria}>
                     <div className={`${css.filterCriteriaText} ${css.filterMenu} ${css.active}`} onClick={() => {handleClick("all")}} >All</div>
                     <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("Python")}}>Python</div>
-                    <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("JavaScript")}}>Javascript</div>
+                    {/* <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("JavaScript")}}>Javascript</div> */}
                     <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("Java")}}>Java</div>
+                    <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("Swift")}}>Swift</div>
                     <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("CSS")}}>CSS</div>
-                    <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("Ruby")}}>Ruby</div>
+                    {/* <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("Ruby")}}>Ruby</div> */}
                     <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("other")}}>Other</div>
                 </div>
                 <hr className={css.projectStartLine}/>
