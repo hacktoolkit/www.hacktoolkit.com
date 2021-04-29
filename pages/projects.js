@@ -23,8 +23,8 @@ const handleClick = (c) =>{
                 var languageNameValue = languageName[0];
                 if (languageNameValue == c || c == "all") {AddClass(x[i], `${css.show}`);}
                 else if(c == "other"){
-                    // if(c != "Ruby" && c!="CSS" && c!="Java" && c!= "JavaScript" && c!= "Python")
-                    //     AddClass(x[i], `${css.show}`);
+                    if(languageNameValue != "Ruby" && languageNameValue!="CSS" && languageNameValue!="Java" && languageNameValue!= "JavaScript" && languageNameValue!= "Python")
+                        AddClass(x[i], `${css.show}`);
                 }
             }
         }
@@ -77,7 +77,7 @@ const Project = () => {
             <h1 className={css.bannerTitle}>Projects</h1>
             <div className={css.topMenus}>
                 <div className={css.subTitle}>
-                    <h4>Our world class project lists</h4>
+                    <h4>Our open source project lists</h4>
                     <hr />
                 </div>
         
