@@ -65,12 +65,14 @@
 
 .black_section {
     height: 700px;
-    background: #172026 !important;
+    background:white !important;
+    // background: #172026 !important;
     width: auto;
-    color: white;
+    color: black;
     display: flex;
     // align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .gray_section {
     height: 700px;
@@ -91,7 +93,7 @@
     justify-content: center;
 }
 .white_section {
-    height: 700px;
+    height: 500px;
     width: 100% !important;
     color: black;
     display: flex;

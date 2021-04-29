@@ -21,7 +21,7 @@ function About() {
             </div>
             <h1 className={css.bannerTitle}>Contact</h1>
                 <div className={css.subTitle}>
-                    <h1>Stay Tuned</h1>
+                    <h1  className={css.underSubTitle}>Stay Tuned</h1>
                     <hr />
                 </div>
                 <div className={css.contactPageHolder}>

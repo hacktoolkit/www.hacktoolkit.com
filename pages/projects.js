@@ -77,7 +77,7 @@ const Project = () => {
             <h1 className={css.bannerTitle}>Projects</h1>
             <div className={css.topMenus}>
                 <div className={css.subTitle}>
-                    <h4>Our open source project lists</h4>
+                    <h1  className={css.underSubTitle}>Our open source project lists</h1>
                     <hr />
                 </div>
         

@@ -22,6 +22,9 @@ import Link from 'next/link';
 import teams from '../static/data/team_members.json';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import { blue } from '@material-ui/core/colors';
+import DynamicFeedIcon from '@material-ui/icons/DynamicFeed';
+import DeviceHubIcon from '@material-ui/icons/DeviceHub';
+import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 
 const Home = () =>{
     console.log(teams)
@@ -42,25 +45,43 @@ const Home = () =>{
             </div>
             <div className={homecss.black_section}>
                 <div className={css.topspace}>
-                    <h2 className={css.sectiontitle}>What is Hacktoolkit?</h2>
+                    <h1 className={css.sectiontitle}>Hacktoolkit?</h1>
                     <h4 className={css.sectionbody}>Hacktoolkit is a collection of bootstrap code that you can use to start your next project, whether it’s a website or mobile app, by letting you to:
                     </h4>
                     <div className={css.homesection2body}>
                         <div className={css.homesection2card}>
                             <ComputerIcon className={css.blackSectionIcons}/>
-                            <p className={css.centerText}>Write code yourself</p>
+                            <p className={css.centerTitleText}>Write code yourself</p>
                             <p className={css.centerText}>The best way to get better at programming is to write code yourself, and learn from well-written code by others.                                
                             </p>
                         </div>
                         <div className={css.homesection2card}>
                             <AccessAlarm className={css.blackSectionIcons}/>
-                            <p className={css.centerText}>Handle time Limitations</p>
-                            <p className={css.centerText}>Hackathons are typically 24-48 hour programming competitions where a lot of programming nerds and geeks get together and build a functioning product from scratch–well, the rules typically are that all of your code and designs have to be done during the hackathon, not before–but using open-source code is an exception                                
+                            <p className={css.centerTitleText}>Handle time Limitations</p>
+                            <p className={css.centerText}>Hackathons are typically 24-48 hour programming competitions where a lot of programming nerds and geeks get together.                                
                             </p>
                         </div>
                         <div className={css.homesection2card}>
                             <CenterFocusWeakIcon className={css.blackSectionIcons}/>
-                            <p className={css.centerText}>Focus on Creating</p>
+                            <p className={css.centerTitleText}>Focus on Creating</p>
+                            <p className={css.centerText}>The best way to get better at programming is to write code yourself, and learn from well-written code by others.                                
+                            </p>
+                        </div>
+                        <div className={css.homesection2card}>
+                            <DynamicFeedIcon className={css.blackSectionIcons}/>
+                            <p className={css.centerTitleText}>Clone the repository</p>
+                            <p className={css.centerText}>The best way to get better at programming is to write code yourself, and learn from well-written code by others.                                
+                            </p>
+                        </div>
+                        <div className={css.homesection2card}>
+                            <DeviceHubIcon className={css.blackSectionIcons}/>
+                            <p className={css.centerTitleText}>Fork the repository</p>
+                            <p className={css.centerText}>Hackathons are typically 24-48 hour programming competitions where a lot of programming nerds and geeks get together.                                
+                            </p>
+                        </div>
+                        <div className={css.homesection2card}>
+                            <EmojiPeopleIcon className={css.blackSectionIcons}/>
+                            <p className={css.centerTitleText}>Issue pull requests </p>
                             <p className={css.centerText}>The best way to get better at programming is to write code yourself, and learn from well-written code by others.                                
                             </p>
                         </div>
@@ -92,7 +113,7 @@ const Home = () =>{
                             <Card id="15924904" name="chrome-extensions" description="A collection of awesome Chrome extensions" forks_count="" watchers_count="" language="" html_url="https://github.com/hacktoolkit/xterm.js" />
                             <Card id="15924904" name="xterm.js" description="A drop-in JavaScript module to colorize Xterm output on your webpages. Absolutely no external dependencies required!" forks_count="" watchers_count="" language="" html_url="https://github.com/hacktoolkit/chrome-extensions" />
                             <Link href="/projects">
-                                <ArrowForwardIosIcon style={{fontSize:50, marginTop:160, color:'#3147d6', cursor:'pointer'}} />
+                                <ArrowForwardIosIcon style={{fontSize:50, marginTop:160, color:'#006ac6', cursor:'pointer'}} />
                             </Link>
                         </div>
                         <Link href="/projects">

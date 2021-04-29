@@ -17,8 +17,9 @@ export default function About() {
             </div>
             <h1 className={css.bannerTitle}>Community</h1>
             <div className={css.subTitle}>
-                    <h4 className={css.underSubTitle}>Our valuable contributors and collaborators come from all over the world</h4>
+                    <h1 className={css.underSubTitle}>Valuable Members</h1>
                     <hr />
+                    <h3 className={css.underSubDetail}>Our valuable contributors and collaborators come from all over the world</h3>
                 </div>
             {/* Team Section */}
             <div className={homecss.community_section}>

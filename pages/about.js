@@ -28,7 +28,7 @@ export default function About() {
             </div>
             <h1 className={css.bannerTitle}>About Us</h1>
             <div className={css.subTitle}>
-                    <h1>What Makes Hacktoolkit Different?</h1>
+                    <h1  className={css.underSubTitle}>What Makes Hacktoolkit Different?</h1>
                     <hr />
             </div>
             <div className={css.subSubTitle}>
