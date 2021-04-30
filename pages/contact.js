@@ -38,7 +38,8 @@ function About() {
                         <PhoneEnabledIcon style={{fontSize:50, color:'#38538d'}}   />  +1 230 456 789-012 345 6789  
                         </div> */}
                         <div className={css.contactMailIcon}>
-                        <MailIcon style={{fontSize:50, color:'#38538d'}}  /> hello@hacktoolkit.com
+                        <a className={css.mailLink} href="mailto:hello@hacktoolkit.com">
+                            <MailIcon style={{fontSize:50, color:'#38538d'}}/> hello@hacktoolkit.com</a>
                         </div>
                         <br />
                     </div>
