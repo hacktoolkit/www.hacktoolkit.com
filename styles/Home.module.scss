@@ -147,3 +147,11 @@
     align-items: flex-start;
     justify-content: center;
 }
+.map_section {
+    height: 400px;
+    background-image: url('../public/map1.png');
+    width: 1500px;
+    color: black;
+    display: flex;
+    justify-content: center;
+}

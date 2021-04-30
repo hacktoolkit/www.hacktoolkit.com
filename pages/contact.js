@@ -8,6 +8,8 @@ import { Octokit } from "@octokit/core";
 import HomeIcon from '@material-ui/icons/Home';
 import PhoneEnabledIcon from '@material-ui/icons/PhoneEnabled';
 import MailIcon from '@material-ui/icons/Mail';
+import homecss from '../styles/Home.module.scss';
+
 
 function About() {
     
@@ -57,6 +59,8 @@ function About() {
                             <button className={css.button}>Send Message</button>
                         </div>
                     </div>
+                </div>
+                <div className={homecss.map_section}>
                 </div>
         </Page>
     );
