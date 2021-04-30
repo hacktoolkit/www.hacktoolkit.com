@@ -24,7 +24,7 @@ export default function About() {
             </div>
             <h1 className={css.bannerTitle}>Community</h1>
             <div className={css.subTitle}>
-                    <h1 className={css.underSubTitle}>Valuable Members</h1>
+                    <h1 className={css.underSubTitle}>Members and Contributors</h1>
                     <hr />
                     <h3 className={css.underSubDetail}>Our valuable contributors and collaborators come from all over the world</h3>
             </div>
@@ -40,15 +40,15 @@ export default function About() {
                 <div className={css.aboutSection1Left}>
                 <h1 className={css.aboutSection1Header}>Engaged with us on social media</h1>
                 <div className={css.aboutSection1LeftLists}>
-                    <div className={css.aboutSection1LeftListIcon}><FacebookIcon style={{fontSize:50, color:'#0d8bf0'}}/></div>
+                    <div className={css.aboutSection1LeftListIcon}><a className={css.link} href="https://www.facebook.com/hacktoolkit" target="_blank"><FacebookIcon style={{fontSize:50, color:'#0d8bf0'}}/></a></div>
                     <div className={css.aboutSection1LeftListDetail}>
-                        please like our Facebook page, <a className={css.link} href="https://www.facebook.com/hacktoolkit" target="_blank">https://www.facebook.com/hacktoolkit</a>
+                        Please like our Facebook page, <a className={css.link} href="https://www.facebook.com/hacktoolkit" target="_blank">https://www.facebook.com/hacktoolkit</a>
                     </div>
                 </div>
                 <div className={css.aboutSection1LeftLists}>
-                    <div className={css.aboutSection1LeftListIcon}><TwitterIcon style={{fontSize:50, color:'#1da1f2'}}/></div>
+                    <div className={css.aboutSection1LeftListIcon}><a className={css.link} href="https://twitter.com/hacktoolkit" target="_blank"><TwitterIcon style={{fontSize:50, color:'#1da1f2'}}/></a></div>
                     <div className={css.aboutSection1LeftListDetail}>
-                        please follow us on twitter, <a className={css.link} href="https://twitter.com/hacktoolkit" target="_blank">https://twitter.com/hacktoolkit</a>
+                        Please follow us on Twitter, <a className={css.link} href="https://twitter.com/hacktoolkit" target="_blank">https://twitter.com/hacktoolkit</a>
                     </div>
                 </div>
                 {/* <div className={css.aboutSection1LeftLists}>

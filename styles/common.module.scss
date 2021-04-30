@@ -609,8 +609,13 @@
 }
 .contactMailIcon{
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
 }
-
+.contactMailIconHolder{
+    display: flex;
+}
 .textField{
     font-size: 14px;
     height: 50px;

@@ -9,7 +9,9 @@ import HomeIcon from '@material-ui/icons/Home';
 import PhoneEnabledIcon from '@material-ui/icons/PhoneEnabled';
 import MailIcon from '@material-ui/icons/Mail';
 import homecss from '../styles/Home.module.scss';
-
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 function About() {
     
@@ -37,9 +39,23 @@ function About() {
                         <div className={css.contactPhoneIcon}>
                         <PhoneEnabledIcon style={{fontSize:50, color:'#38538d'}}   />  +1 230 456 789-012 345 6789  
                         </div> */}
-                        <div className={css.contactMailIcon}>
-                        <a className={css.mailLink} href="mailto:hello@hacktoolkit.com">
-                            <MailIcon style={{fontSize:50, color:'#38538d'}}/> hello@hacktoolkit.com</a>
+                        <div className={css.contactMailIconHolder}>
+                            <div className={css.contactMailIcon}>
+                                <a className={css.mailLink} href="mailto:hello@hacktoolkit.com">
+                                    <MailIcon style={{fontSize:50, color:'#38538d'}}/> hello@hacktoolkit.com
+                                </a>
+                                <a className={css.mailLink} href="https://www.facebook.com/hacktoolkit">
+                                    <FacebookIcon style={{fontSize:50, color:'#0d8bf0'}}/> https://www.facebook.com/hacktoolkit
+                                </a>
+                            </div>
+                            <div className={css.contactMailIcon}>
+                                <a className={css.mailLink} href="https://twitter.com/hacktoolkit">
+                                    <TwitterIcon style={{fontSize:50, color:'#1da1f2'}}/> https://twitter.com/hacktoolkit
+                                </a>
+                                <a className={css.mailLink} href="https://github.com/hacktoolkit">
+                                    <GitHubIcon style={{fontSize:45, color:'#000000'}}/> https://github.com/hacktoolkit
+                                </a>
+                            </div>
                         </div>
                         <br />
                     </div>
@@ -60,8 +76,6 @@ function About() {
                             <button className={css.button}>Send Message</button>
                         </div>
                     </div> */}
-                </div>
-                <div className={homecss.map_section}>
                 </div>
         </Page>
     );
