@@ -47,8 +47,7 @@ function About() {
                                 <a className={css.mailLink} href="https://www.facebook.com/hacktoolkit">
                                     <FacebookIcon style={{fontSize:50, color:'#0d8bf0'}}/> https://www.facebook.com/hacktoolkit
                                 </a>
-                            </div>
-                            <div className={css.contactMailIcon}>
+                            
                                 <a className={css.mailLink} href="https://twitter.com/hacktoolkit">
                                     <TwitterIcon style={{fontSize:50, color:'#1da1f2'}}/> https://twitter.com/hacktoolkit
                                 </a>
