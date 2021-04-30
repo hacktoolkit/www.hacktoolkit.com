@@ -30,13 +30,13 @@ function About() {
 
                         We’ll add your name to the contributors list! If you would like to be a maintainer for Hacktoolkit, please contact us
                         <div className={css.contactHomeIcon}>
-                        <HomeIcon style={{fontSize:50}}  />  San Francisco, CA, USA. 
+                        <HomeIcon style={{fontSize:50, color:'#38538d'}}  />  San Francisco, CA, USA. 
                         </div>
                         <div className={css.contactPhoneIcon}>
-                        <PhoneEnabledIcon style={{fontSize:50}}   />  +1 230 456 789-012 345 6789  
+                        <PhoneEnabledIcon style={{fontSize:50, color:'#38538d'}}   />  +1 230 456 789-012 345 6789  
                         </div>
                         <div className={css.contactMailIcon}>
-                        <MailIcon style={{fontSize:50}}  /> hello@hacktoolkit.com
+                        <MailIcon style={{fontSize:50, color:'#38538d'}}  /> hello@hacktoolkit.com
                         </div>
                         <br />
                     </div>

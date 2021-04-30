@@ -13,6 +13,7 @@ import AssignmentOutlinedIcon from '@material-ui/icons/AssignmentOutlined';
 import PhonelinkOutlinedIcon from '@material-ui/icons/PhonelinkOutlined';
 import CompareArrowsOutlinedIcon from '@material-ui/icons/CompareArrowsOutlined';
 import StorefrontOutlinedIcon from '@material-ui/icons/StorefrontOutlined';
+import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import CodeOutlinedIcon from '@material-ui/icons/CodeOutlined';
 import Features from '../pages/features';
 import homecss from '../styles/Home.module.scss';
@@ -32,12 +33,12 @@ export default function About() {
                     <hr />
             </div>
             <div className={css.subSubTitle}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
+                There will only be one main repository, ever, for Hacktoolkit (with the exception of submodules--more on this later).
             </div>
             <div className={css.featureRow}>
-                <Features icon={<DoneOutlineIcon style={{fontSize:40}} />} title="Working Codes" detail="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos."/>
-                <Features icon={<ForumOutlinedIcon style={{fontSize:40}} />} title="Professional Support" detail="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos."/>
-                <Features icon={<PeopleOutlineOutlinedIcon style={{fontSize:40}} />} title="Active Community" detail="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos."/>
+                <Features icon={<DoneOutlineIcon style={{fontSize:40, color:'#38538d'}} />} title="Working Codes" detail="The goal is to be one repository that users can clone and immediately start using, not 47 different repositories."/>
+                <Features icon={<ForumOutlinedIcon style={{fontSize:40, color:'#38538d'}} />} title="Easiness" detail="Easy to use; easy onboarding process. We love skeletons and bootstrap code."/>
+                <Features icon={<BusinessCenterIcon style={{fontSize:40, color:'#38538d'}} />} title="Quick Usage" detail="Find the best examples that are already existing (don't reinvent the wheel), and import them as submodules"/>
             </div>
             <hr className={css.hrBlur} />
         {/* <div className={homecss.gray_section}> */}
@@ -76,18 +77,17 @@ export default function About() {
                 </div>
                 </div>
                 <div className={css.aboutSection1Right}>
-                    <Image
+                    <img
+                        className={css.halfSectionImage}
                         src="/aboutSection1.png"
                         alt="Picture of the author"
-                        width={800}
-                        height={500}
                     />
                 </div>
             </div>
             <hr className={css.hrBlur} />
             <div className={css.subscribe}>
                 <h1 className={css.subscribeHeader}>Subscribe to get updates</h1>
-                <p className={css.subscribeSubHeader}>By subscribing you will get newsleter, promotions adipisicing elit. Architecto beatae, asperiores tempore repudiandae saepe aspernatur unde voluptate sapiente quia ex.</p>
+                <p className={css.subscribeSubHeader}>By subscribing you will get newsleter, updates and newest releases.</p>
                 <div className={css.contactTextField}>
                     <input className={css.textField} type="text" placeholder="Enter your email" />
                 </div>

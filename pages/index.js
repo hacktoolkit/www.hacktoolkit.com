@@ -70,40 +70,25 @@ const Home = () =>{
                         <div className={css.homesection2card}>
                             <DynamicFeedIcon className={css.blackSectionIcons}/>
                             <p className={css.centerTitleText}>Clone the repository</p>
-                            <p className={css.centerText}>The best way to get better at programming is to write code yourself, and learn from well-written code by others.                                
+                            <p className={css.centerText}>(git clone git@github.com:hacktoolkit/hacktoolkit.git) and start using it!                                
                             </p>
                         </div>
                         <div className={css.homesection2card}>
                             <DeviceHubIcon className={css.blackSectionIcons}/>
                             <p className={css.centerTitleText}>Fork the repository</p>
-                            <p className={css.centerText}>Hackathons are typically 24-48 hour programming competitions where a lot of programming nerds and geeks get together.                                
+                            <p className={css.centerText}>Fork the repository if you want to contribute for new things to incorporate back into the hacktoolkit library.                         
                             </p>
                         </div>
                         <div className={css.homesection2card}>
                             <EmojiPeopleIcon className={css.blackSectionIcons}/>
                             <p className={css.centerTitleText}>Issue pull requests </p>
-                            <p className={css.centerText}>The best way to get better at programming is to write code yourself, and learn from well-written code by others.                                
+                            <p className={css.centerText}> Formatting requirements TBD (provide a README.md and description of what your code does).                             
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* Team Section */}
-            <div className={homecss.team_section}>
-                {/* <Member /> */}
-                <div className={css.teambackgroundimage}>
-                    <div className={css.topspace}>
-                        <h2 className={css.sectiontitle}>Community</h2>
-                        <h4 className={css.sectionbodywhite}>Our valuable contributors and collaborators come from all over the world
-                        </h4>
-                        <div className={teamcss.ImageLists}>
-                            {teams.data.map(({id,login,html_url,avatar_url}) => (
-                                <Member key={id} login={login} html_url={html_url} avatar_url={avatar_url} />
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <div className={homecss.service_section}>
                     <div className={css.topspace}>
                         <h2 className={css.sectiontitle}>Projects</h2>
@@ -120,6 +105,23 @@ const Home = () =>{
                             <h2 className={css.seeMore}>See more projects...</h2>
                         </Link>
                     </div>
+            </div>
+
+            {/* Team Section */}
+            <div className={homecss.team_section}>
+                {/* <Member /> */}
+                <div className={css.teambackgroundimage}>
+                    <div className={css.topspace}>
+                        <h2 className={css.sectiontitle}>Community</h2>
+                        <h4 className={css.sectionbodywhite}>Our valuable contributors and collaborators come from all over the world
+                        </h4>
+                        <div className={teamcss.ImageLists}>
+                            {teams.data.map(({id,login,html_url,avatar_url}) => (
+                                <Member key={id} login={login} html_url={html_url} avatar_url={avatar_url} />
+                            ))}
+                        </div>
+                    </div>
+                </div>
             </div>
         </Page>
     );
