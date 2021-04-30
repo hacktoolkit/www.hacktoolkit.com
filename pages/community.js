@@ -34,7 +34,7 @@ export default function About() {
                 ))}
             </div>
             <Link href="/contact">
-                <h2 className={css.seeMoreTeam}>Join the team...</h2>
+                <h1 className={css.seeMoreTeam}>Join the team...</h1>
             </Link>
             <div className={css.aboutSection1Holder}>
                 <div className={css.aboutSection1Left}>
@@ -42,19 +42,19 @@ export default function About() {
                 <div className={css.aboutSection1LeftLists}>
                     <div className={css.aboutSection1LeftListIcon}><FacebookIcon style={{fontSize:50, color:'#0d8bf0'}}/></div>
                     <div className={css.aboutSection1LeftListDetail}>
-                        please like our Facebook page, https://www.facebook.com/hacktoolkit
+                        please like our Facebook page, <a className={css.link} href="https://www.facebook.com/hacktoolkit" target="_blank">https://www.facebook.com/hacktoolkit</a>
                     </div>
                 </div>
                 <div className={css.aboutSection1LeftLists}>
                     <div className={css.aboutSection1LeftListIcon}><TwitterIcon style={{fontSize:50, color:'#1da1f2'}}/></div>
                     <div className={css.aboutSection1LeftListDetail}>
-                        please follow us on twitter, https://twitter.com/hacktoolkit
+                        please follow us on twitter, <a className={css.link} href="https://twitter.com/hacktoolkit" target="_blank">https://twitter.com/hacktoolkit</a>
                     </div>
                 </div>
                 <div className={css.aboutSection1LeftLists}>
                     <div className={css.aboutSection1LeftListIcon}><LinkedInIcon style={{fontSize:50, color:'#38538d'}}/></div>
                     <div className={css.aboutSection1LeftListDetail}>
-                        contact us via Linkedin, https://www.linkedin.com/in/jontsai/
+                        contact us via Linkedin, <a className={css.link} href="https://www.linkedin.com/in/jontsai/" target="_blank">https://www.linkedin.com/in/jontsai/</a>
                     </div>
                 </div>
                 
