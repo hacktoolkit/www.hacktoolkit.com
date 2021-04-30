@@ -142,7 +142,7 @@
 }
 .teamCard{
     width: 250px;
-    height: 280px;
+    height: 250px;
 }
 .teamCard:hover{
       /* Start the shake animation and make the animation last for 0.5 seconds */
@@ -187,6 +187,7 @@
     border: none;
     height: 40px;
     color: white;
+    margin-top: 15px;
 }
 .teamButton:hover{
     background-color: lightgray;

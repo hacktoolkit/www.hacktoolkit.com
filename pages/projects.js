@@ -77,10 +77,10 @@ const Project = () => {
             <h1 className={css.bannerTitle}>Projects</h1>
             <div className={css.topMenus}>
                 <div className={css.subTitle}>
-                    <h1  className={css.underSubTitle}>Our open source project lists</h1>
+                    <h4  className={css.underSubTitle}>Browse various permissively-licensed open-source projects</h4>
                     <hr />
                 </div>
-        
+                
                 <div className={css.filterCriteria}>
                     <div className={`${css.filterCriteriaText} ${css.filterMenu} ${css.active}`} onClick={() => {handleClick("all")}} >All</div>
                     <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("Python")}}>Python</div>
