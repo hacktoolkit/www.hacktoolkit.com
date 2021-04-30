@@ -31,18 +31,18 @@ function About() {
                     <h2>Don't hesitate to contact us</h2>
 
                         We’ll add your name to the contributors list! If you would like to be a maintainer for Hacktoolkit, please contact us
-                        <div className={css.contactHomeIcon}>
+                        {/* <div className={css.contactHomeIcon}>
                         <HomeIcon style={{fontSize:50, color:'#38538d'}}  />  San Francisco, CA, USA. 
                         </div>
                         <div className={css.contactPhoneIcon}>
                         <PhoneEnabledIcon style={{fontSize:50, color:'#38538d'}}   />  +1 230 456 789-012 345 6789  
-                        </div>
+                        </div> */}
                         <div className={css.contactMailIcon}>
                         <MailIcon style={{fontSize:50, color:'#38538d'}}  /> hello@hacktoolkit.com
                         </div>
                         <br />
                     </div>
-                    <div className={css.contactForm}>
+                    {/* <div className={css.contactForm}>
                         <div className={css.contactTextField}>
                             <input className={css.textField} type="text" placeholder="Name" />
                         </div>
@@ -58,7 +58,7 @@ function About() {
                         <div className={css.contactButton}>
                             <button className={css.button}>Send Message</button>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className={homecss.map_section}>
                 </div>
