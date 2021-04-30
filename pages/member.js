@@ -1,6 +1,7 @@
 import teamcss from '../styles/teams.module.scss';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import css from '../styles/common.module.scss';
 
 const Member = ({login,html_url,avatar_url}) =>{
     return(

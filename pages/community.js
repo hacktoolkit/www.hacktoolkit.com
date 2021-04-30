@@ -63,9 +63,6 @@ export default function About() {
                     <img
                         className={css.halfSectionImage}
                         src="/social.jpg"
-                        // alt="Picture of the social media"
-                        // width={800}
-                        // height={500}
                     />
                 </div>
             </div>
