@@ -85,7 +85,7 @@ export default function About() {
                 </div>
             </div>
             <hr className={css.hrBlur} />
-            <div className={css.subscribe}>
+            {/* <div className={css.subscribe}>
                 <h1 className={css.subscribeHeader}>Subscribe to get updates</h1>
                 <p className={css.subscribeSubHeader}>By subscribing you will get newsleter, updates and newest releases.</p>
                 <div className={css.contactTextField}>
@@ -94,7 +94,7 @@ export default function About() {
                 <div className={css.contactButton}>
                     <button className={css.button}>Subscribe</button>
                 </div>
-            </div>
+            </div> */}
 
         {/* </div> */}
          

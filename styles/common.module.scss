@@ -67,7 +67,9 @@
             color: #757575;
         }
     }
-    .mini_title {
+    
+    .mini_title 
+    {
         font-size: 1.5rem;
         color: rgb(153, 153, 153);
         // font-family: 'Courier New';
@@ -159,6 +161,7 @@
 }
 .topspace {
     padding-top: 100px;
+    width: 1600px;
 }
 .sectiontitle {
     font-family: 'courier New';
@@ -180,12 +183,7 @@
     color: black;
     font-weight: bold;
 }
-.filterMenu{
-    color:black;
-    cursor: pointer !important;
-    background-color: white;
-    border: 0px;
-}
+
 .sectionbodywhite {
     padding-left: 400px;
     padding-right: 400px;
@@ -231,18 +229,19 @@
 }
 .homesection2body {
     padding-top: 80px;
-    margin-left: 200px;
-    margin-right: 200px;
+    padding-left: 200px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    width: 1300px;
+    align-items: center;
+    width: 1600px;
+    object-fit: cover;
 }
 .homesection2card {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 400px;
+    // margin-right: 50px;
 }
 .centerText {
     text-align: center !important;
@@ -321,8 +320,7 @@
 .cardHolder{
     display: flex;
     justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
+    padding-left: 150px;
 }
 .cardLine{
     border-top: 6px solid #fafafa;
@@ -492,11 +490,22 @@
 }
 .filterCriteria{
     display: flex;  
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    // margin-right: 30px;
     padding-top: 50px;
+    // margin-top: 40px;
     font-size: 18px;
     width: 700px;
     color: gray;
+    // position:absolute;
+}
+.filterMenu{
+    color:black;
+    cursor: pointer !important;
+    background-color: white;
+    border: 0px;
+    margin-right: 50px;
 }
 .topMenus{
     position:absolute;
@@ -818,3 +827,51 @@
     text-decoration: none !important;
 }
 //community page end
+
+//media screen
+@media screen and (max-width:1050px) 
+{
+        .title_max{
+            font-size: 4.5rem;
+            padding-top: 80px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .mini_title{
+            font-size: 1rem !important;
+            margin: 20px 90px 0px 90px !important;
+
+        }
+        .homesection2body{
+            display: flex;
+            width: 400px;
+        }
+        .sectionbody{
+            padding-left: 570px !important;
+            padding-right: 570px !important;
+        }
+        // .topspace{
+        //     padding-top: 0px !important;
+        // }
+
+        .fullProjectsListCard
+        {
+            // width: 100px !important;
+            flex-direction: row;
+            align-items:center;
+            margin-left: 0px;
+            flex: 100%;
+        }
+
+        .filterCriteria{
+            width: 456px !important;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+            flex-wrap: wrap;
+            display: flex;
+        }
+}
