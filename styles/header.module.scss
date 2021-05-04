@@ -21,6 +21,9 @@
     width: 70px;
     height: 70px;
 }
+.smallHeaderHidden{
+    display: none !important;
+}
 @media screen and (max-width:1050px) {
     .logotitle{
         display: none;
@@ -39,7 +42,7 @@
         .smallHeader{
             display: none !important;
         }
-            display: none !important;
+        display: none !important;
 
     }
     
