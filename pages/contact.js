@@ -28,17 +28,12 @@ function About() {
                     <h1  className={css.underSubTitle}>Stay Tuned</h1>
                     <hr />
                 </div>
+                <h2 className={css.contactHeader}>Don't hesitate to contact us</h2>
+                    <p className={css.subContactHeader}>
+                        We’ll add your name to the contributors list! If you would like to be a maintainer for Hacktoolkit, please contact us
+                    </p>
                 <div className={css.contactPageHolder}>
                     <div className={css.contactDetail}>
-                    <h2>Don't hesitate to contact us</h2>
-
-                        We’ll add your name to the contributors list! If you would like to be a maintainer for Hacktoolkit, please contact us
-                        {/* <div className={css.contactHomeIcon}>
-                        <HomeIcon style={{fontSize:50, color:'#38538d'}}  />  San Francisco, CA, USA. 
-                        </div>
-                        <div className={css.contactPhoneIcon}>
-                        <PhoneEnabledIcon style={{fontSize:50, color:'#38538d'}}   />  +1 230 456 789-012 345 6789  
-                        </div> */}
                         <div className={css.contactMailIconHolder}>
                             <div className={css.contactMailIcon}>
                                 <a className={css.mailLink} href="mailto:hello@hacktoolkit.com">
@@ -47,7 +42,6 @@ function About() {
                                 <a className={css.mailLink} href="https://www.facebook.com/hacktoolkit">
                                     <FacebookIcon style={{fontSize:50, color:'#0d8bf0'}}/> https://www.facebook.com/hacktoolkit
                                 </a>
-                            
                                 <a className={css.mailLink} href="https://twitter.com/hacktoolkit">
                                     <TwitterIcon style={{fontSize:50, color:'#1da1f2'}}/> https://twitter.com/hacktoolkit
                                 </a>
