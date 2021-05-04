@@ -75,7 +75,7 @@ const Project = () => {
                 </div>
             </div>
             <h1 className={css.bannerTitle}>Projects</h1>
-            <div className={css.topMenus}>
+            {/* <div className={css.topMenus}> */}
                 <div className={css.subTitle}>
                     <h4  className={css.underSubTitle}>Browse various permissively-licensed open-source projects</h4>
                     <hr />
@@ -92,7 +92,7 @@ const Project = () => {
                     <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("other")}}>Other</div>
                 </div>
                 <hr className={css.projectStartLine}/>
-            </div>
+            {/* </div> */}
             <div className={css.fullProjectsListCard}>
                 {projects.data.map(({id,name,description,forks_count,watchers_count,language,html_url,fork}) => (
                     <>

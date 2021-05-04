@@ -386,8 +386,8 @@
     height: 372px;
     border-radius: 1.2rem;
     cursor: pointer;
-    margin-bottom: 30px;
-    margin-right: 20px;
+    margin-bottom: 50px;
+    margin-right: 80px;
     background-color: white;
 }
 .fullTopBar{
@@ -528,13 +528,12 @@
 }
 .fullProjectsListCard{
     display: flex;
+    align-items: center;
+    justify-content: center !important;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 1500px;
+    width: 1200px;
     padding: 20px;
-    margin-left: 205px;
-    margin-top: 600px;
+    // margin-left: 205px;
 }
 .cards{
     transition: 500ms ease;   
@@ -831,6 +830,15 @@
 //media screen
 @media screen and (max-width:1050px) 
 {
+        .aboutSection1Holder{
+            display: flex;
+            flex-direction: column !important;
+            width: 100%;
+            padding: 40px;
+        }
+        .aboutSection1Left, .aboutSection1Right{
+            max-width: 100% !important;
+        }
         .title_max{
             font-size: 4.5rem;
             padding-top: 80px;
@@ -857,10 +865,19 @@
         .fullProjectsListCard
         {
             // width: 100px !important;
-            flex-direction: row;
-            align-items:center;
-            margin-left: 0px;
-            flex: 100%;
+            // justify-content: space-between;
+            // flex-direction: row;
+            // align-items:center;
+            // margin-left: 0px;
+            // // flex: 100%;
+            // margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            padding-left: 80px;
+            padding-right: 50px;
         }
 
         .filterCriteria{
