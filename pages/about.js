@@ -33,7 +33,7 @@ export default function About() {
                     <hr />
             </div>
             <div className={css.subSubTitle}>
-                There will only be one main repository, ever, for Hacktoolkit (with the exception of submodules--more on this later).
+                <p>There will only be one main repository, ever, for Hacktoolkit (with the exception of submodules--more on this later).</p>
             </div>
             <div className={css.featureRow}>
                 <Features icon={<DoneOutlineIcon style={{fontSize:40, color:'#38538d'}} />} title="Working Codes" detail="The goal is to be one repository that users can clone and immediately start using, not 47 different repositories."/>
@@ -85,20 +85,6 @@ export default function About() {
                 </div>
             </div>
             <hr className={css.hrBlur} />
-            {/* <div className={css.subscribe}>
-                <h1 className={css.subscribeHeader}>Subscribe to get updates</h1>
-                <p className={css.subscribeSubHeader}>By subscribing you will get newsleter, updates and newest releases.</p>
-                <div className={css.contactTextField}>
-                    <input className={css.textField} type="text" placeholder="Enter your email" />
-                </div>
-                <div className={css.contactButton}>
-                    <button className={css.button}>Subscribe</button>
-                </div>
-            </div> */}
-
-        {/* </div> */}
-         
-      
         </Page>
     );
 }

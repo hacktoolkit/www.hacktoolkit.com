@@ -485,6 +485,8 @@
 }
 .subSubTitle{
     text-align: center;
+    font-size: 1.2rem;
+    text-align: center;
     color: gray;
     width:600px;
 }
@@ -848,7 +850,6 @@
         .mini_title{
             font-size: 1rem !important;
             margin: 20px 90px 0px 90px !important;
-
         }
         .homesection2body{
             display: flex;
@@ -858,19 +859,18 @@
             padding-left: 570px !important;
             padding-right: 570px !important;
         }
-        // .topspace{
-        //     padding-top: 0px !important;
-        // }
-
+        .featureRow{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 40px;
+        }
+        .featureCardHolder{
+            width: 100%;
+            margin-bottom: 20px;
+        }
         .fullProjectsListCard
         {
-            // width: 100px !important;
-            // justify-content: space-between;
-            // flex-direction: row;
-            // align-items:center;
-            // margin-left: 0px;
-            // // flex: 100%;
-            // margin-top: 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -890,5 +890,8 @@
             margin-right: 0px !important;
             flex-wrap: wrap;
             display: flex;
+        }
+        .subSubTitle{
+            width: 100%;
         }
 }
