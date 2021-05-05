@@ -163,6 +163,9 @@
     padding-top: 100px;
     width: 1600px;
 }
+.spaceOnTop{
+    margin-top: 400px;
+}
 .sectiontitle {
     font-family: 'courier New';
     font-weight: bold !important;
@@ -170,14 +173,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .subContactDetail{
     display: flex;
     flex-wrap: wrap;
 }
 .sectionbody {
-    padding-left: 500px;
-    padding-right: 500px;
     font-size: 1rem;
     text-align: center;
     font-family: sans-serif;
@@ -189,17 +191,13 @@
 }
 
 .sectionbodywhite {
-    padding-left: 400px;
-    padding-right: 400px;
-    font-size: 1rem;
+    font-size: 1.4rem;
     text-align: center;
     color: white;
     margin-bottom: 60px;
 }
 
 .sectionbodygray {
-    padding-left: 350px;
-    padding-right: 350px;
     font-size: 1rem;
     text-align: center;
     color: gray;
@@ -233,12 +231,12 @@
 }
 .homesection2body {
     padding-top: 80px;
-    padding-left: 200px;
+    // padding-left: 200px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 1600px;
-    object-fit: cover;
+    justify-content: center;
+    width: 1400px;
 }
 .homesection2card {
     display: flex;
@@ -324,7 +322,10 @@
 .cardHolder{
     display: flex;
     justify-content: space-between;
-    padding-left: 150px;
+    // padding-left: 150px;
+    flex-wrap: wrap;
+    height: auto;
+    width: 1100px;
 }
 .cardLine{
     border-top: 6px solid #fafafa;
@@ -391,7 +392,8 @@
     border-radius: 1.2rem;
     cursor: pointer;
     margin-bottom: 50px;
-    margin-right: 80px;
+    text-align: center;
+    margin-right: 70px;
     background-color: white;
 }
 .fullTopBar{
@@ -406,6 +408,18 @@
     box-shadow: 0 0 15px 15px #e9e9e9;
     transform: scale(1.02);
     transition: 600ms ease-in-out;
+}
+@media screen and (max-width:1242px){
+    .moreProjectIcon{
+        display: none !important;
+    }
+    .cardHolder{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        width: 100%;
+    }
 }
 .seeMore{
     display: flex;
@@ -849,6 +863,7 @@
         .aboutSection1Left, .aboutSection1Right{
             max-width: 100% !important;
         }
+        
         .contactHeader, .subContactHeader{
             width: 100%;
             padding-left: 20px;
@@ -869,9 +884,10 @@
             justify-content: flex-start;
             width: 700px;
         }
+        
         .title_max{
-            font-size: 4.5rem;
-            padding-top: 80px;
+            font-size: 4.5rem !important;
+            padding-top: 80px !important;
             padding-left: 10px;
             padding-right: 10px;
         }
@@ -881,11 +897,8 @@
         }
         .homesection2body{
             display: flex;
-            width: 400px;
-        }
-        .sectionbody{
-            padding-left: 570px !important;
-            padding-right: 570px !important;
+            width: 100%;
+            padding:20px;
         }
         .featureRow{
             display: flex;

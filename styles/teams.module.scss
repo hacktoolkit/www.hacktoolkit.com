@@ -73,14 +73,14 @@
 
 .ImageLists{
     margin-bottom: 20px;
-    padding-right: 100px;
+    // padding-right: 100px;
     display: flex !important;
     // justify-content:flex-start !important;
     // align-items: flex-start;
     flex-wrap: wrap ;
-    width: 1569px;
+    width: 100%;
     line-height: 0.5 !important;
-    justify-content: flex-end;
+    justify-content: center;
     flex-grow: 1;
     flex-basis: 100%;
 }
@@ -217,5 +217,10 @@
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 		transform: translatey(0px);
 	}
+}
+@media screen and (max-width:1050px) {
+    .ImageLists{
+        padding-left: 100px;
+    }
 }
 //team page card css end

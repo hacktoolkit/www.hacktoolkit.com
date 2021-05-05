@@ -44,8 +44,7 @@ const Home = () =>{
                 </div>
             </div>
             <div className={homecss.black_section}>
-                <div className={css.topspace}>
-                    <h1 className={css.sectiontitle}>Hacktoolkit?</h1>
+                    <h1 className={css.sectiontitle}>What is Hacktoolkit?</h1>
                     <h4 className={css.sectionbody}>Hacktoolkit is a collection of bootstrap code that you can use to start your next project, whether it’s a website or mobile app, by letting you to:
                     </h4>
                     <div className={css.homesection2body}>
@@ -86,32 +85,30 @@ const Home = () =>{
                             </p>
                         </div>
                     </div>
-                </div>
             </div>
             
             <div className={homecss.service_section}>
-                    <div className={css.topspace}>
                         <h2 className={css.sectiontitle}>Projects</h2>
                         <h4 className={css.sectionbodygray}>Convenient open-source projects enabling rich experiences and world-class applications </h4>
                         <div className={css.cardHolder}>
                             <Card id="15924904" name="django-htk" description="A set of apps, utilities, middlewares, etc for Django" forks_count="" watchers_count="" language="" html_url="https://github.com/hacktoolkit/django-htk" />
                             <Card id="15924904" name="chrome-extensions" description="A collection of awesome Chrome extensions" forks_count="" watchers_count="" language="" html_url="https://github.com/hacktoolkit/xterm.js" />
                             <Card id="15924904" name="xterm.js" description="A drop-in JavaScript module to colorize Xterm output on your webpages. Absolutely no external dependencies required!" forks_count="" watchers_count="" language="" html_url="https://github.com/hacktoolkit/chrome-extensions" />
-                            <Link href="/projects">
-                                <ArrowForwardIosIcon style={{fontSize:50, marginTop:160, marginRight:20, color:'#006ac6', cursor:'pointer'}} />
-                            </Link>
+                            <div className={css.moreProjectIcon}>
+                                <Link href="/projects">
+                                    <ArrowForwardIosIcon style={{fontSize:50, marginTop:160, marginRight:20, color:'#006ac6', cursor:'pointer'}} />
+                                </Link>
+                            </div>
                         </div>
                         <Link href="/projects">
                             <h2 className={css.seeMore}>See more projects...</h2>
                         </Link>
-                    </div>
             </div>
 
             {/* Team Section */}
             <div className={homecss.team_section}>
                 {/* <Member /> */}
-                <div className={css.teambackgroundimage}>
-                    <div className={css.topspace}>
+                {/* <div className={css.teambackgroundimage}> */}
                         <h2 className={css.sectiontitle}>Community</h2>
                         <h4 className={css.sectionbodywhite}>Our valuable contributors and collaborators come from all over the world
                         </h4>
@@ -120,8 +117,7 @@ const Home = () =>{
                                 <Member key={id} login={login} html_url={html_url} avatar_url={avatar_url} />
                             ))}
                         </div>
-                    </div>
-                </div>
+                    {/* </div> */}
             </div>
         </Page>
     );

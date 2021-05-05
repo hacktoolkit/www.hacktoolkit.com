@@ -72,7 +72,9 @@
     display: flex;
     // align-items: center;
     justify-content: center;
+    flex-direction: column;
     margin-bottom: 50px;
+    margin-top: 100px;
 }
 .gray_section {
     height: 700px;
@@ -100,19 +102,35 @@
     align-items: flex-start;
     justify-content: center;
 }
+.service_section{
+    height: auto;
+    // background-image: url('../public/background.jpg');
+    background-color: rgb(248, 248, 248);
+    width: 100% !important;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
 .team_section {
     background: #4b6cb7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     // background-image: url('../public/teambg.jpg');
-    background-position-y: 100% !important;
-    height: 950px;
-    width: auto;
+    // background-position-y: 100% !important;
+    height: auto;
+    width: 1400px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+    margin-top: 10px;
+    margin-left: -20px;
+    margin-right: -40px;
 }
 
 .community_section{
@@ -137,16 +155,7 @@
     align-items: center;
     justify-content: center;
 }
-.service_section{
-    height: 800px;
-    // background-image: url('../public/background.jpg');
-    background-color: rgb(248, 248, 248);
-    width: 100% !important;
-    color: black;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
+
 .map_section {
     height: 400px;
     background-image: url('../public/map1.png');
@@ -154,4 +163,10 @@
     color: black;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width:1290px) {
+    .team_section{    
+        width: 100%;
+    }
 }
