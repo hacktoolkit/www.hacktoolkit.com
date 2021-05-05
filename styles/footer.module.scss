@@ -1,0 +1,18 @@
+.footer {
+    // width: 1600px;
+    height: 100px;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    img {
+        margin-left: 0.5rem;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

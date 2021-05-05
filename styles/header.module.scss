@@ -1,0 +1,145 @@
+.headertop {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 1600px;
+    width: 100%;
+    position: absolute !important;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    object-fit: scale-down;
+}
+.smallHeader{
+    display: none !important;
+}
+.headerLeftImg{
+    width: 70px;
+    height: 70px;
+}
+.smallHeaderHidden{
+    display: none !important;
+}
+@media screen and (max-width:1050px) {
+    .logotitle{
+        display: none;
+    }
+    .header{
+        display: none !important;
+    }
+    .smallMenu{
+        display: block !important;
+        cursor: pointer;
+        background-color: white;
+        border:none;
+        height: 0px;
+    }
+    .smallHeaderHidden{
+        .smallHeader{
+            display: none !important;
+        }
+        display: none !important;
+
+    }
+    
+    .smallHeader{
+        position: absolute;
+        top:0;
+        left:0;
+        display: flex !important;
+        flex-direction: column;
+        width: 40%;
+    }
+    .smallHeader > a{
+        background-color: black;
+        color: white;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-top: 20px;
+        border-bottom: 1px solid lightgray;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .smallHeader >a:hover{
+        color: black;
+        background-color: #f2f2f2;
+        border: 1px solid lightgray;
+        border-radius: 2px;
+    }
+
+    .smallHeader >img{
+        background-color: black;
+        color: white;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-top: 20px;
+        border-bottom: 1px solid lightgray;
+        text-decoration: none;
+        cursor: pointer;
+        object-fit: contain;
+        width: 100%;
+        justify-content: center;
+        height: 110px;
+        padding-right: 61px;
+        }
+        .headerleft{
+            margin-right: 5px;
+        }
+}
+.header {
+    width: 40%;
+    height: 75px;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    //font-family: "Times New Roman";
+    font-size: 1.125rem;
+    z-index: 2147483647;
+
+    img {
+        margin-left: 0.5rem;
+    }
+
+    a {
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        text-decoration: none;
+        color: black;
+    }
+
+    .active {
+        font-weight: bold;
+    }
+    .menus {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.headerleft {
+    display: flex !important;
+    // align-items: center !important;
+
+    // font-style: italic;
+}
+.logotitle {
+    font-size: 2.5rem;
+    font-family: 'Courier New';
+    font-weight: bold;
+    letter-spacing: 0in;
+    padding-top: 20px;
+    margin-left: 10px;
+}
+.smallMenu{
+    display: none;
+    margin-top: 10px;
+    float: right;
+    margin-right: 0px !important;
+    box-sizing: border-box;
+}
