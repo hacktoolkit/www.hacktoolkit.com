@@ -14,10 +14,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'next/image';
 import ReactCountryFlag from "react-country-flag";
-import Member from '../pages/member';
+import Member from '../components/member';
 import { Octokit } from "@octokit/core";
 import React, { useEffect, useState } from "react";
-import Card from '../pages/card';
+import Card from '../components/card';
 import Link from 'next/link';
 import teams from '../static/data/team_members.json';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
@@ -27,7 +27,6 @@ import DeviceHubIcon from '@material-ui/icons/DeviceHub';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 
 const Home = () =>{
-    console.log(teams)
     return (
         <Page>
             

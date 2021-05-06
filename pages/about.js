@@ -15,7 +15,7 @@ import CompareArrowsOutlinedIcon from '@material-ui/icons/CompareArrowsOutlined'
 import StorefrontOutlinedIcon from '@material-ui/icons/StorefrontOutlined';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import CodeOutlinedIcon from '@material-ui/icons/CodeOutlined';
-import Features from '../pages/features';
+import Features from '../components/features';
 import homecss from '../styles/Home.module.scss';
 import Image from 'next/image';
 
