@@ -17,8 +17,6 @@ import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import CodeOutlinedIcon from '@material-ui/icons/CodeOutlined';
 import Features from '../components/features';
 import homecss from '../styles/Home.module.scss';
-import Image from 'next/image';
-
 
 export default function About() {
     return (
