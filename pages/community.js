@@ -14,7 +14,8 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
-export default function About() {
+
+export default function Community() {
     console.log(teams.data);
     return (
         <Page>
@@ -57,6 +58,12 @@ export default function About() {
                         className={css.halfSectionImage}
                         src="/social.jpg"
                     />
+                    {/* <Image 
+                        className={css.halfSectionImage}
+                        src="/social.jpg"
+                        style={{width:"100%",height:"auto"}}
+                        layout="fill"
+                    /> */}
                 </div>
             </div>
             

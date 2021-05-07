@@ -2,8 +2,13 @@ import teamcss from '../styles/teams.module.scss';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import css from '../styles/common.module.scss';
+import Image from 'next/image';
 
-const Member = ({login,html_url,avatar_url}) =>{
+const myLoader = ({ src, width, quality }) => {
+    return `https://avatars.githubusercontent.com/${src}?w=${width}&q=${quality || 75}`
+  }
+
+  const Member = ({login,html_url,avatar_url}) =>{
     return(
     <div className={teamcss.avator}>
         <div className={teamcss.avatorDetail}>
@@ -20,6 +25,12 @@ const Member = ({login,html_url,avatar_url}) =>{
             <br />
         </div>
         <img src = {avatar_url} className={teamcss.avatorImg} />                                    
+        {/* <Image 
+            loader = {myLoader}
+            src = "/u/138947?u=32db84d16eae22ee3ce75e865aec45e4cc464573&v=4" 
+            className={teamcss.avatorImg} 
+            width={70} 
+            height={70}/> */}
     </div>
     )
 }
