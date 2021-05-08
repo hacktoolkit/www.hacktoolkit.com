@@ -6,15 +6,16 @@ import teamcss from '../styles/teams.module.scss';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import teams from '../static/data/team_members.json';
-import Member from '../pages/member';
-import Team from '../pages/teamcard';
+import Member from '../components/member';
+import Team from '../components/teamcard';
 import Link from 'next/link';
 import Image from 'next/image';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
-export default function About() {
+
+export default function Community() {
     console.log(teams.data);
     return (
         <Page>
@@ -57,6 +58,12 @@ export default function About() {
                         className={css.halfSectionImage}
                         src="/social.jpg"
                     />
+                    {/* <Image 
+                        className={css.halfSectionImage}
+                        src="/social.jpg"
+                        style={{width:"100%",height:"auto"}}
+                        layout="fill"
+                    /> */}
                 </div>
             </div>
             

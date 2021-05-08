@@ -4,7 +4,7 @@ import css from '../styles/common.module.scss';
 import { Octokit } from "@octokit/core";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Card from '../pages/card';
+import Card from '../components/card';
 import classNames from 'classnames';
 import projects from '../static/data/project_data.json';
 

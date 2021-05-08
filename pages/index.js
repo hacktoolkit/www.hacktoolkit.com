@@ -14,10 +14,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'next/image';
 import ReactCountryFlag from "react-country-flag";
-import Member from '../pages/member';
+import Member from '../components/member';
 import { Octokit } from "@octokit/core";
 import React, { useEffect, useState } from "react";
-import Card from '../pages/card';
+import Card from '../components/card';
 import Link from 'next/link';
 import teams from '../static/data/team_members.json';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
@@ -27,7 +27,6 @@ import DeviceHubIcon from '@material-ui/icons/DeviceHub';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 
 const Home = () =>{
-    console.log(teams)
     return (
         <Page>
             
@@ -94,11 +93,11 @@ const Home = () =>{
                             <Card id="15924904" name="django-htk" description="A set of apps, utilities, middlewares, etc for Django" forks_count="" watchers_count="" language="" html_url="https://github.com/hacktoolkit/django-htk" />
                             <Card id="15924904" name="chrome-extensions" description="A collection of awesome Chrome extensions" forks_count="" watchers_count="" language="" html_url="https://github.com/hacktoolkit/xterm.js" />
                             <Card id="15924904" name="xterm.js" description="A drop-in JavaScript module to colorize Xterm output on your webpages. Absolutely no external dependencies required!" forks_count="" watchers_count="" language="" html_url="https://github.com/hacktoolkit/chrome-extensions" />
-                            <div className={css.moreProjectIcon}>
+                            {/* <div className={css.moreProjectIcon}>
                                 <Link href="/projects">
                                     <ArrowForwardIosIcon style={{fontSize:50, marginTop:160, marginRight:20, color:'#006ac6', cursor:'pointer'}} />
                                 </Link>
-                            </div>
+                            </div> */}
                         </div>
                         <Link href="/projects">
                             <h2 className={css.seeMore}>See more projects...</h2>
