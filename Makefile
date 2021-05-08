@@ -20,7 +20,6 @@ clean:
 
 ## build - build the app for release
 build: clean install
-	mkdir -p out
 	yarn build
 	cp CNAME out/
 	touch out/.nojekyll
