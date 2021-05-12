@@ -15,10 +15,6 @@ const NAV_LINKS = [
         name: 'About',
         url: '/about',
     },
-    // {
-    //     name: 'Blog',
-    //     url: '/blog',
-    // },
     {
         name: 'Contact',
         url: '/contact',

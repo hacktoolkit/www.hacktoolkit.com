@@ -1,17 +1,11 @@
 import Page from '../components/base_page';
-
 import css from '../styles/common.module.scss';
-import homecss from '../styles/Home.module.scss';
 import teamcss from '../styles/teams.module.scss';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import teams from '../static/data/team_members.json';
-import Member from '../components/member';
 import Team from '../components/teamcard';
 import Link from 'next/link';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 export default function Community() {
     console.log(teams.data);

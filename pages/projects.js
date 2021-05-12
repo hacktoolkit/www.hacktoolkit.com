@@ -1,21 +1,15 @@
 import Page from '../components/base_page';
 import React, { useEffect } from 'react';
 import css from '../styles/common.module.scss';
-import { Octokit } from '@octokit/core';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Card from '../components/card';
-import classNames from 'classnames';
-import projects from '../static/data/project_data.json';
+import projects from '../static/data/projects.json';
 
 const handleClick = (c) => {
     if (process.browser) {
         var x, i;
         x = document.getElementsByClassName(`${css.cards}`);
         console.log(x.length);
-        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
         for (i = 0; i < x.length; i++) {
-            // console.log(x[i].className);
             RemoveClass(x[i], `${css.show}`);
             if (x[i] != null) {
                 var languageName = x[i].className.split(' ');
@@ -82,7 +76,6 @@ const Project = () => {
                 <div className={css.banner}></div>
             </div>
             <h1 className={css.bannerTitle}>Projects</h1>
-            {/* <div className={css.topMenus}> */}
             <div className={css.subTitle}>
                 <h4 className={css.underSubTitle}>
                     Browse various permissively-licensed open-source projects
@@ -107,7 +100,6 @@ const Project = () => {
                 >
                     Python
                 </div>
-                {/* <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("JavaScript")}}>Javascript</div> */}
                 <div
                     className={`${css.filterCriteriaText} ${css.filterMenu}`}
                     onClick={() => {
@@ -132,7 +124,6 @@ const Project = () => {
                 >
                     CSS
                 </div>
-                {/* <div className={`${css.filterCriteriaText} ${css.filterMenu}`} onClick={() => {handleClick("Ruby")}}>Ruby</div> */}
                 <div
                     className={`${css.filterCriteriaText} ${css.filterMenu}`}
                     onClick={() => {
@@ -143,7 +134,6 @@ const Project = () => {
                 </div>
             </div>
             <hr className={css.projectStartLine} />
-            {/* </div> */}
             <div className={css.fullProjectsListCard}>
                 {projects.data.map(
                     ({
@@ -182,17 +172,4 @@ const Project = () => {
         </Page>
     );
 };
-
-// export async function getStaticProps() {
-//     const octokit = new Octokit({
-//         auth: process.env.GITHUB_API_KEY,
-//         });
-//         const res = await octokit.request("/users/hacktoolkit/repos");
-//         const projects = await res;
-//         return {
-//             props: {
-//                 projects,
-//                 },
-//         }
-// }
 export default Project;

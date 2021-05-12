@@ -1,12 +1,6 @@
 import teamcss from '../styles/teams.module.scss';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
-const myNewLoader = ({ src, width, quality }) => {
-    return `https://avatars.githubusercontent.com/${src}?w=${width}&q=${
-        quality || 75
-    }`;
-};
-
 const Team = ({ key, name, url, image, type, admin }) => {
     return (
         <div className={teamcss.teamColumn}>
