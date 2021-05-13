@@ -19,6 +19,7 @@
     "@zeit/next-sass": "^1.0.1",
     "bootstrap": "^4.5.2",
     "classnames": "^2.2.6",
+    "dotenv": "^9.0.2",
     "jquery": "^3.5.1",
     "less": "^3.12.2",
     "next": "^10.0.4",
