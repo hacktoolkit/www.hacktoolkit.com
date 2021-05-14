@@ -1,22 +1,14 @@
 import Page from '../components/base_page';
-
 import css from '../styles/common.module.scss';
-
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import DoneOutlineIcon from '@material-ui/icons/DoneOutline';
 import ForumOutlinedIcon from '@material-ui/icons/ForumOutlined';
-import AllInclusiveOutlinedIcon from '@material-ui/icons/AllInclusiveOutlined';
-import PeopleOutlineOutlinedIcon from '@material-ui/icons/PeopleOutlineOutlined';
 import DeveloperModeOutlinedIcon from '@material-ui/icons/DeveloperModeOutlined';
 import AssignmentOutlinedIcon from '@material-ui/icons/AssignmentOutlined';
 import PhonelinkOutlinedIcon from '@material-ui/icons/PhonelinkOutlined';
 import CompareArrowsOutlinedIcon from '@material-ui/icons/CompareArrowsOutlined';
 import StorefrontOutlinedIcon from '@material-ui/icons/StorefrontOutlined';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
-import CodeOutlinedIcon from '@material-ui/icons/CodeOutlined';
 import Features from '../components/features';
-import homecss from '../styles/Home.module.scss';
 
 export default function About() {
     return (
@@ -68,7 +60,6 @@ export default function About() {
                 />
             </div>
             <hr className={css.hrBlur} />
-            {/* <div className={homecss.gray_section}> */}
             <div className={css.aboutSection1Holder}>
                 <div className={css.aboutSection1Left}>
                     <h1 className={css.aboutSection1Header}>

@@ -1,26 +1,16 @@
+import React from 'react';
 import { AccessAlarm } from '@material-ui/icons';
 import ComputerIcon from '@material-ui/icons/Computer';
 import CenterFocusWeakIcon from '@material-ui/icons/CenterFocusWeak';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import Icon from '@material-ui/core/Icon';
 import Page from '../components/base_page';
 import Welcome from '../components/js/text_effect';
 import css from '../styles/common.module.scss';
 import teamcss from '../styles/teams.module.scss';
 import homecss from '../styles/Home.module.scss';
-import Button from 'react-bootstrap/Button';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import ReactCountryFlag from 'react-country-flag';
 import Member from '../components/member';
-import { Octokit } from '@octokit/core';
-import React, { useEffect, useState } from 'react';
 import Card from '../components/card';
 import Link from 'next/link';
 import teams from '../static/data/team_members.json';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import { blue } from '@material-ui/core/colors';
 import DynamicFeedIcon from '@material-ui/icons/DynamicFeed';
 import DeviceHubIcon from '@material-ui/icons/DeviceHub';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
@@ -154,21 +144,13 @@ const Home = () => {
                         language=""
                         html_url="https://github.com/hacktoolkit/chrome-extensions"
                     />
-                    {/* <div className={css.moreProjectIcon}>
-                                <Link href="/projects">
-                                    <ArrowForwardIosIcon style={{fontSize:50, marginTop:160, marginRight:20, color:'#006ac6', cursor:'pointer'}} />
-                                </Link>
-                            </div> */}
                 </div>
                 <Link href="/projects">
                     <h2 className={css.seeMore}>See more projects...</h2>
                 </Link>
             </div>
 
-            {/* Team Section */}
             <div className={homecss.team_section}>
-                {/* <Member /> */}
-                {/* <div className={css.teambackgroundimage}> */}
                 <h2 className={css.sectiontitle}>Community</h2>
                 <h4 className={css.sectionbodywhite}>
                     Our valuable contributors and collaborators come from all
@@ -184,26 +166,8 @@ const Home = () => {
                         />
                     ))}
                 </div>
-                {/* </div> */}
             </div>
         </Page>
     );
 };
-
-// export async function getStaticProps()
-// {
-//         const octokit = new Octokit({
-//         auth: process.env.GITHUB_API_KEY ,
-//         });
-
-//         const res = await octokit.request("/organizations/5404851/team/509218/members");
-//         const teams = await res;
-//         return {
-//             props: {
-//                 teams,
-//                 },
-//         }
-
-// }
-
 export default Home;
