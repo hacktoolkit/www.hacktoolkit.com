@@ -4,7 +4,7 @@ import css from '../styles/common.module.scss';
 import Card from '../components/card';
 import projects from '../static/data/projects.json';
 
-const handleClick = (c) => {
+const handleClick = (c, languages) => {
     if (process.browser) {
         var x, i;
         x = document.getElementsByClassName(`${css.cards}`);
@@ -17,14 +17,17 @@ const handleClick = (c) => {
                 if (languageNameValue == c || c == 'all') {
                     AddClass(x[i], `${css.show}`);
                 } else if (c == 'other') {
-                    if (
-                        languageNameValue != 'Swift' &&
-                        languageNameValue != 'CSS' &&
-                        languageNameValue != 'Java' &&
-                        languageNameValue != 'JavaScript' &&
-                        languageNameValue != 'Python'
-                    )
+                    var languageDidnotExist = true;
+                    languages.uniqueLanguages.map((e) =>
+                        e != null
+                            ? languageNameValue == e
+                                ? (languageDidnotExist = false)
+                                : null
+                            : null
+                    );
+                    if (languageDidnotExist) {
                         AddClass(x[i], `${css.show}`);
+                    }
                 }
             }
         }
@@ -70,6 +73,7 @@ const handleClick = (c) => {
 };
 
 const Project = () => {
+    const uniqueLanguages = [...new Set(projects.map((obj) => obj.language))];
     return (
         <Page>
             <div className={css.overlay}>
@@ -87,47 +91,29 @@ const Project = () => {
                 <div
                     className={`${css.filterCriteriaText} ${css.filterMenu} ${css.active}`}
                     onClick={() => {
-                        handleClick('all');
+                        handleClick('all', { uniqueLanguages });
                     }}
                 >
                     All
                 </div>
+
+                {uniqueLanguages.map((language) =>
+                    language == null ? null : (
+                        <div
+                            className={`${css.filterCriteriaText} ${css.filterMenu}`}
+                            onClick={() => {
+                                handleClick(language, { uniqueLanguages });
+                            }}
+                        >
+                            {language}
+                        </div>
+                    )
+                )}
+
                 <div
                     className={`${css.filterCriteriaText} ${css.filterMenu}`}
                     onClick={() => {
-                        handleClick('Python');
-                    }}
-                >
-                    Python
-                </div>
-                <div
-                    className={`${css.filterCriteriaText} ${css.filterMenu}`}
-                    onClick={() => {
-                        handleClick('Java');
-                    }}
-                >
-                    Java
-                </div>
-                <div
-                    className={`${css.filterCriteriaText} ${css.filterMenu}`}
-                    onClick={() => {
-                        handleClick('Swift');
-                    }}
-                >
-                    Swift
-                </div>
-                <div
-                    className={`${css.filterCriteriaText} ${css.filterMenu}`}
-                    onClick={() => {
-                        handleClick('CSS');
-                    }}
-                >
-                    CSS
-                </div>
-                <div
-                    className={`${css.filterCriteriaText} ${css.filterMenu}`}
-                    onClick={() => {
-                        handleClick('other');
+                        handleClick('other', { uniqueLanguages });
                     }}
                 >
                     Other
@@ -135,7 +121,7 @@ const Project = () => {
             </div>
             <hr className={css.projectStartLine} />
             <div className={css.fullProjectsListCard}>
-                {projects.data.map(
+                {projects.map(
                     ({
                         id,
                         name,
@@ -146,26 +132,20 @@ const Project = () => {
                         html_url,
                         fork,
                     }) => (
-                        <>
-                            {!fork ? (
-                                <div
-                                    className={`${language} ${css.show} ${css.cards}`}
-                                >
-                                    <div className={css.filterCard}>
-                                        <Card
-                                            Key={id}
-                                            id={id}
-                                            name={name}
-                                            description={description}
-                                            forks_count={forks_count}
-                                            watchers_count={watchers_count}
-                                            language={language}
-                                            html_url={html_url}
-                                        />
-                                    </div>
-                                </div>
-                            ) : null}
-                        </>
+                        <div className={`${language} ${css.show} ${css.cards}`}>
+                            <div className={css.filterCard}>
+                                <Card
+                                    Key={id}
+                                    id={id}
+                                    name={name}
+                                    description={description}
+                                    forks_count={forks_count}
+                                    watchers_count={watchers_count}
+                                    language={language}
+                                    html_url={html_url}
+                                />
+                            </div>
+                        </div>
                     )
                 )}
             </div>

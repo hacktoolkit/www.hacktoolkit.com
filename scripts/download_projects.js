@@ -15,7 +15,10 @@ async function main() {
     const outputFile = path.join(dir, '../static/data/projects.json');
 
     const repositoriesJSON = await fetchRepositoriesJSON(GITHUB_USER);
-    writeJSONData(repositoriesJSON, outputFile);
+    const nonForkedRepositoriesJSON = repositoriesJSON.data.filter(
+        (e) => e.fork == false
+    );
+    writeJSONData(nonForkedRepositoriesJSON, outputFile);
 }
 
 main();

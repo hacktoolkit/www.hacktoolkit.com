@@ -67,8 +67,8 @@
             color: #757575;
         }
     }
-    
-    .mini_title 
+
+    .mini_title
     {
         font-size: 1.5rem;
         color: rgb(153, 153, 153);
@@ -275,7 +275,7 @@
     background: #000428;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #0081f1, #003564);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #0081f1, #003564); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+
     // background-color: #b8b8b8;
     height: 54px;
     border-bottom-left-radius: 1.2rem;
@@ -352,7 +352,7 @@
 }
 @keyframes zoomin {
   0%   {transform: scale(0);}
-  
+
   100% {transform: scale(1);}
 }
 
@@ -509,16 +509,12 @@
     width:600px;
 }
 .filterCriteria{
-    display: flex;  
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    // margin-right: 30px;
     padding-top: 50px;
-    // margin-top: 40px;
     font-size: 18px;
-    width: 700px;
     color: gray;
-    // position:absolute;
 }
 .filterMenu{
     color:black;
@@ -556,7 +552,7 @@
     // margin-left: 205px;
 }
 .cards{
-    transition: 500ms ease;   
+    transition: 500ms ease;
 }
 //Projects Page End
 
@@ -853,7 +849,7 @@
 //community page end
 
 //media screen
-@media screen and (max-width:1050px) 
+@media screen and (max-width:1050px)
 {
         .aboutSection1Holder{
             display: flex;
@@ -864,7 +860,7 @@
         .aboutSection1Left, .aboutSection1Right{
             max-width: 100% !important;
         }
-        
+
         .contactHeader, .subContactHeader{
             width: 100%;
             padding-left: 20px;
@@ -885,7 +881,7 @@
             justify-content: flex-start;
             width: 700px;
         }
-        
+
         .title_max{
             font-size: 4.5rem !important;
             padding-top: 80px !important;

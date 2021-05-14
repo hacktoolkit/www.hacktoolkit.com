@@ -8,7 +8,6 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 
 export default function Community() {
-    console.log(teams.data);
     return (
         <Page>
             <div className={css.overlay}>
