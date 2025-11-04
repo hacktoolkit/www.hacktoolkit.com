@@ -1,18 +1,7 @@
-import Safe from 'react-safe';
-
 import Head from 'next/head';
+import Script from 'next/script';
 
 export function GoogleAnalytics(props) {
-    const gtagJS = `
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-    dataLayer.push(arguments);
-}
-gtag('js', new Date());
-
-gtag('config', '${props.trackingId}');
-`;
-
     return (
         <>
             <Head>
@@ -24,8 +13,21 @@ gtag('config', '${props.trackingId}');
                     }
                     key="google-analytics"
                 ></script>
-                <Safe.script>{gtagJS}</Safe.script>
             </Head>
+            <Script
+                id="google-analytics-config"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: `
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+    dataLayer.push(arguments);
+}
+gtag('js', new Date());
+gtag('config', '${props.trackingId}');
+                    `,
+                }}
+            />
         </>
     );
 }
