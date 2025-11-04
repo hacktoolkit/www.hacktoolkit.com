@@ -15,6 +15,10 @@ module.exports = {
             '/community': { page: '/community' },
             '/contact': { page: '/contact' },
             '/projects': { page: '/projects' },
+            '/docs': { page: '/docs' },
+            '/docs/getting-started': { page: '/docs/getting-started' },
+            '/docs/modules': { page: '/docs/modules' },
+            '/docs/api': { page: '/docs/api' },
         };
     },
 };

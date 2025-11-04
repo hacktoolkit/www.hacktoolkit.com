@@ -8,6 +8,10 @@ const NAV_LINKS = [
         url: '/projects',
     },
     {
+        name: 'Docs',
+        url: '/docs',
+    },
+    {
         name: 'Community',
         url: '/community',
     },
