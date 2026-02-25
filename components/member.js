@@ -1,5 +1,5 @@
 import teamcss from '../styles/teams.module.scss';
-import GitHubIcon from '@material-ui/icons/GitHub';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Member = ({ login, html_url, avatar_url }) => {
     return (

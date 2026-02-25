@@ -1,7 +1,7 @@
 import css from '../styles/common.module.scss';
-import StarOutlineIcon from '@material-ui/icons/StarOutline';
-import DeviceHubIcon from '@material-ui/icons/DeviceHub';
-import GitHubIcon from '@material-ui/icons/GitHub';
+import StarOutlineIcon from '@mui/icons-material/StarOutline';
+import DeviceHubIcon from '@mui/icons-material/DeviceHub';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Card = ( {id,name,description ,forks_count ,watchers_count ,language ,html_url} ) =>{
     return(
