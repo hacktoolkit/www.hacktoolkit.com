@@ -1,7 +1,7 @@
 import React from 'react';
-import { AccessAlarm } from '@material-ui/icons';
-import ComputerIcon from '@material-ui/icons/Computer';
-import CenterFocusWeakIcon from '@material-ui/icons/CenterFocusWeak';
+import { AccessAlarm } from '@mui/icons-material';
+import ComputerIcon from '@mui/icons-material/Computer';
+import CenterFocusWeakIcon from '@mui/icons-material/CenterFocusWeak';
 import Page from '../components/base_page';
 import Welcome from '../components/js/text_effect';
 import css from '../styles/common.module.scss';
@@ -11,9 +11,9 @@ import Member from '../components/member';
 import Card from '../components/card';
 import Link from 'next/link';
 import teams from '../static/data/team_members.json';
-import DynamicFeedIcon from '@material-ui/icons/DynamicFeed';
-import DeviceHubIcon from '@material-ui/icons/DeviceHub';
-import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
+import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
+import DeviceHubIcon from '@mui/icons-material/DeviceHub';
+import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 
 const Home = () => {
     return (

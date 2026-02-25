@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import css from '../styles/header.module.scss';
 import NAV_LINKS from '../constants/nav_links.js';
-import MenuIcon from '@material-ui/icons/Menu';
+import MenuIcon from '@mui/icons-material/Menu';
 
 export function Header({ children }) {
     const router = useRouter();

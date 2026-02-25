@@ -1,9 +1,9 @@
 import Page from '../components/base_page';
 import css from '../styles/common.module.scss';
-import MailIcon from '@material-ui/icons/Mail';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import GitHubIcon from '@material-ui/icons/GitHub';
+import MailIcon from '@mui/icons-material/Mail';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 function Contact() {
     return (

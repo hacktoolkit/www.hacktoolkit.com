@@ -4,8 +4,8 @@ import teamcss from '../styles/teams.module.scss';
 import teams from '../static/data/team_members.json';
 import Team from '../components/teamcard';
 import Link from 'next/link';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 export default function Community() {
     return (

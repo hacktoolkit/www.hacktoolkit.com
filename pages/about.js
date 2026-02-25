@@ -1,13 +1,13 @@
 import Page from '../components/base_page';
 import css from '../styles/common.module.scss';
-import DoneOutlineIcon from '@material-ui/icons/DoneOutline';
-import ForumOutlinedIcon from '@material-ui/icons/ForumOutlined';
-import DeveloperModeOutlinedIcon from '@material-ui/icons/DeveloperModeOutlined';
-import AssignmentOutlinedIcon from '@material-ui/icons/AssignmentOutlined';
-import PhonelinkOutlinedIcon from '@material-ui/icons/PhonelinkOutlined';
-import CompareArrowsOutlinedIcon from '@material-ui/icons/CompareArrowsOutlined';
-import StorefrontOutlinedIcon from '@material-ui/icons/StorefrontOutlined';
-import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
+import DoneOutlineIcon from '@mui/icons-material/DoneOutline';
+import ForumOutlinedIcon from '@mui/icons-material/ForumOutlined';
+import DeveloperModeOutlinedIcon from '@mui/icons-material/DeveloperModeOutlined';
+import AssignmentOutlinedIcon from '@mui/icons-material/AssignmentOutlined';
+import PhonelinkOutlinedIcon from '@mui/icons-material/PhonelinkOutlined';
+import CompareArrowsOutlinedIcon from '@mui/icons-material/CompareArrowsOutlined';
+import StorefrontOutlinedIcon from '@mui/icons-material/StorefrontOutlined';
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import Features from '../components/features';
 
 export default function About() {
